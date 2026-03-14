@@ -1,0 +1,10 @@
+pages:
+  stage: deploy
+  script:
+    - mkdir -p public
+    - cp Rodano_Terracielo_Valuation_Report_v2Style.html public/index.html
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
