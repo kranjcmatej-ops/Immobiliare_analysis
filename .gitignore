@@ -1,79 +1,12 @@
-# Python virtual environment
-.venv/
-venv/
-env/
-ENV/
+# Keep ONLY map_listings.html and Rodano_Terracielo_Valuation_Report_v3.html on GitHub
+# Everything else stays local
 
-# Python cache
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
+# Ignore everything
+/*
 
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-pip-wheel-metadata/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# PyInstaller
-*.manifest
-*.spec
-
-# Unit test / coverage
-.coverage
-.pytest_cache/
-htmlcov/
-
-# IDEs
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-.DS_Store
-
-# VS Code workspace files
-*.code-workspace
-
-# Temporary files
-.temp/
-*.tmp
-*.bak
-
-# Environment variables
-.env
-.env.local
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
-
-# Data snapshots - keep history folder structure but ignore old snapshots
-# listings_history/ and peschiera_listings_history/ folders can get large
-# Uncomment below if you want to exclude them from git tracking:
-# listings_history/*.json
-# peschiera_listings_history/*.json
-
-# IDE-generated files
-*.sublime-project
-*.sublime-workspace
+# But keep these files/folders
+!.git
+!.gitignore
+!map_listings.html
+!Rodano_Terracielo_Valuation_Report_v3.html
+!README.md
