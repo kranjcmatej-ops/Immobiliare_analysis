@@ -1,0 +1,150 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Rodano Real Estate Listings Map</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+        <style>
+            html, body { height: 100%; margin: 0; padding: 0; }
+            #map { height: 100%; }
+            .info {
+                padding: 10px 12px;
+                font: 14px/16px Arial, Helvetica, sans-serif;
+                background: white;
+                background: rgba(255,255,255,0.95);
+                box-shadow: 0 0 15px rgba(0,0,0,0.2);
+                border-radius: 5px;
+                max-width: 250px;
+            }
+            .info h4 { margin: 0 0 8px 0; font-size: 15px; }
+            .legend {
+                line-height: 20px;
+                color: #555;
+                font-size: 13px;
+            }
+            .legend i {
+                width: 14px;
+                height: 14px;
+                float: left;
+                margin-right: 8px;
+                opacity: 0.7;
+                border-radius: 50%;
+                border: 2px solid white;
+            }
+            .checkbox-item {
+                margin-top: 10px;
+                padding-top: 8px;
+                border-top: 1px solid #ddd;
+            }
+            .checkbox-item input {
+                margin-right: 6px;
+            }
+            .checkbox-item label {
+                cursor: pointer;
+                font-size: 13px;
+            }
+            .stats {
+                font-size: 12px;
+                margin-top: 8px;
+                padding-top: 8px;
+                border-top: 1px solid #ddd;
+                color: #666;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="map"></div>
+        <script>
+            const map = L.map('map').setView([45.4738, 9.346699999999998], 13);
+            
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors',
+                maxZoom: 19
+            }).addTo(map);
+            
+            const markers = [{"lat": 45.471, "lng": 9.3541, "popup": "\n            <div style=\"font-family: Arial, sans-serif; font-size: 12px; width: 200px; background: white; padding: 8px; border-radius: 4px;\">\n                <b>Villa a schiera</b><br>\n                Via Giuseppe Giusti, Rodano<br>\n                <b>Price:</b> \u20ac460,000<br>\n                <b>Size:</b> 150 m\u00b2<br>\n                <b>EUR/m\u00b2:</b> \u20ac3,067/m\u00b2<br>\n                <b>Rooms:</b> 4<br>\n                <a href=\"https://www.immobiliare.it/annunci/127161945/\" target=\"_blank\" style=\"color: #3498db;\">View on immobiliare.it</a>\n            </div>\n        ", "color": "orange", "price": 460000, "id": "127161945", "removed": false}, {"lat": 45.4777, "lng": 9.3505, "popup": "\n            <div style=\"font-family: Arial, sans-serif; font-size: 12px; width: 200px; background: white; padding: 8px; border-radius: 4px;\">\n                <b>Villa unifamiliare</b><br>\n                Via Fonte, Rodano<br>\n                <b>Price:</b> \u20ac772,000<br>\n                <b>Size:</b> 320 m\u00b2<br>\n                <b>EUR/m\u00b2:</b> \u20ac2,412/m\u00b2<br>\n                <b>Rooms:</b> 5+<br>\n                <a href=\"https://www.immobiliare.it/annunci/125434549/\" target=\"_blank\" style=\"color: #3498db;\">View on immobiliare.it</a>\n            </div>\n        ", "color": "red", "price": 772000, "id": "125434549", "removed": false}, {"lat": 45.4735, "lng": 9.3563, "popup": "\n            <div style=\"font-family: Arial, sans-serif; font-size: 12px; width: 200px; background: white; padding: 8px; border-radius: 4px;\">\n                <b>Villa bifamiliare</b><br>\n                Via Guglielmo Marconi 9, Rodano<br>\n                <b>Price:</b> \u20ac480,000<br>\n                <b>Size:</b> 184 m\u00b2<br>\n                <b>EUR/m\u00b2:</b> \u20ac2,609/m\u00b2<br>\n                <b>Rooms:</b> 5<br>\n                <a href=\"https://www.immobiliare.it/annunci/127441340/\" target=\"_blank\" style=\"color: #3498db;\">View on immobiliare.it</a>\n            </div>\n        ", "color": "orange", "price": 480000, "id": "127441340", "removed": false}, {"lat": 45.4654, "lng": 9.3386, "popup": "\n            <div style=\"font-family: Arial, sans-serif; font-size: 12px; width: 200px; background: white; padding: 8px; border-radius: 4px;\">\n                <b>Appartamento</b><br>\n                Via Bologna 3, Rodano<br>\n                <b>Price:</b> \u20ac239,000<br>\n                <b>Size:</b> 106 m\u00b2<br>\n                <b>EUR/m\u00b2:</b> \u20ac2,255/m\u00b2<br>\n                <b>Rooms:</b> 3<br>\n                <a href=\"https://www.immobiliare.it/annunci/124775013/\" target=\"_blank\" style=\"color: #3498db;\">View on immobiliare.it</a>\n            </div>\n        ", "color": "blue", "price": 239000, "id": "124775013", "removed": false}, {"lat": 45.4721, "lng": 9.35681, "popup": "\n            <div style=\"font-family: Arial, sans-serif; font-size: 12px; width: 200px; background: white; padding: 8px; border-radius: 4px;\">\n                <b>Villa unifamiliare</b><br>\n                Via Ariosto, Rodano<br>\n                <b>Price:</b> \u20ac990,000<br>\n                <b>Size:</b> 470 m\u00b2<br>\n                <b>EUR/m\u00b2:</b> \u20ac2,106/m\u00b2<br>\n                <b>Rooms:</b> 5+<br>\n                <a href=\"https://www.immobiliare.it/annunci/121435942/\" target=\"_blank\" style=\"color: #3498db;\">View on immobiliare.it</a>\n            </div>\n        ", "color": "red", "price": 990000, "id": "121435942", "removed": false}, {"lat": 45.4709, "lng": 9.357, "popup": "\n            <div style=\"font-family: Arial, sans-serif; font-size: 12px; width: 200px; background: white; padding: 8px; border-radius: 4px;\">\n                <b>Villa bifamiliare</b><br>\n                Via Giuseppe Parini, Rodano<br>\n                <b>Price:</b> \u20ac370,000<br>\n                <b>Size:</b> 270 m\u00b2<br>\n                <b>EUR/m\u00b2:</b> \u20ac1,370/m\u00b2<br>\n                <b>Rooms:</b> 4<br>\n                <a href=\"https://www.immobiliare.it/annunci/125159037/\" target=\"_blank\" style=\"color: #3498db;\">View on immobiliare.it</a>\n            </div>\n        ", "color": "blue", "price": 370000, "id": "125159037", "removed": false}, {"lat": 45.4681, "lng": 9.3364, "popup": "\n            <div style=\"font-family: Arial, sans-serif; font-size: 12px; width: 200px; background: white; padding: 8px; border-radius: 4px;\">\n                <b>Appartamento</b><br>\n                Via dei Tigli, Rodano<br>\n                <b>Price:</b> \u20ac119,000<br>\n                <b>Size:</b> 60 m\u00b2<br>\n                <b>EUR/m\u00b2:</b> \u20ac1,983/m\u00b2<br>\n                <b>Rooms:</b> 2<br>\n                <a href=\"https://www.immobiliare.it/annunci/125907071/\" target=\"_blank\" style=\"color: #3498db;\">View on immobiliare.it</a>\n            </div>\n        ", "color": "green", "price": 119000, "id": "125907071", "removed": false}, {"lat": 45.4644, "lng": 9.3398, "popup": "\n            <div style=\"font-family: Arial, sans-serif; font-size: 12px; width: 200px; background: white; padding: 8px; border-radius: 4px;\">\n                <b>Appartamento</b><br>\n                Via Palermo, Rodano<br>\n                <b>Price:</b> n/a<br>\n                <b>Size:</b> 175 m\u00b2<br>\n                <b>EUR/m\u00b2:</b> n/a<br>\n                <b>Rooms:</b> 5<br>\n                <a href=\"https://www.immobiliare.it/annunci/126612405/\" target=\"_blank\" style=\"color: #3498db;\">View on immobiliare.it</a>\n            </div>\n        ", "color": "gray", "price": null, "id": "126612405", "removed": false}, {"lat": 45.47053528, "lng": 9.35396767, "popup": "\n            <div style=\"font-family: Arial, sans-serif; font-size: 12px; width: 200px; background: white; padding: 8px; border-radius: 4px;\">\n                <b>Appartamento</b><br>\n                Via Giuseppe Giusti, Rodano<br>\n                <b>Price:</b> \u20ac460,000<br>\n                <b>Size:</b> 133 m\u00b2<br>\n                <b>EUR/m\u00b2:</b> \u20ac3,459/m\u00b2<br>\n                <b>Rooms:</b> 4<br>\n                <a href=\"https://www.immobiliare.it/annunci/126571185/\" target=\"_blank\" style=\"color: #3498db;\">View on immobiliare.it</a>\n            </div>\n        ", "color": "orange", "price": 460000, "id": "126571185", "removed": false}, {"lat": 45.4797, "lng": 9.35331, "popup": "\n            <div style=\"font-family: Arial, sans-serif; font-size: 12px; width: 200px; background: white; padding: 8px; border-radius: 4px;\">\n                <b>Appartamento</b><br>\n                Via Giuseppe Garibaldi, Rodano<br>\n                <b>Price:</b> \u20ac189,000<br>\n                <b>Size:</b> 65 m\u00b2<br>\n                <b>EUR/m\u00b2:</b> \u20ac2,908/m\u00b2<br>\n                <b>Rooms:</b> 2<br>\n                <a href=\"https://www.immobiliare.it/annunci/127405311/\" target=\"_blank\" style=\"color: #3498db;\">View on immobiliare.it</a>\n            </div>\n        ", "color": "green", "price": 189000, "id": "127405311", "removed": false}, {"lat": 45.4711, "lng": 9.3535, "popup": "\n            <div style=\"font-family: Arial, sans-serif; font-size: 12px; width: 200px; background: white; padding: 8px; border-radius: 4px;\">\n                <b>Appartamento</b><br>\n                Via Giuseppe Giusti, Rodano<br>\n                <b>Price:</b> \u20ac660,000<br>\n                <b>Size:</b> 220 m\u00b2<br>\n                <b>EUR/m\u00b2:</b> \u20ac3,000/m\u00b2<br>\n                <b>Rooms:</b> 5+<br>\n                <a href=\"https://www.immobiliare.it/annunci/126230351/\" target=\"_blank\" style=\"color: #3498db;\">View on immobiliare.it</a>\n            </div>\n        ", "color": "red", "price": 660000, "id": "126230351", "removed": false}, {"lat": 45.4709, "lng": 9.3563, "popup": "\n            <div style=\"font-family: Arial, sans-serif; font-size: 12px; width: 200px; background: white; padding: 8px; border-radius: 4px;\">\n                <b>Appartamento</b><br>\n                Via Giuseppe Giusti, Rodano<br>\n                <b>Price:</b> \u20ac247,000<br>\n                <b>Size:</b> 85 m\u00b2<br>\n                <b>EUR/m\u00b2:</b> \u20ac2,906/m\u00b2<br>\n                <b>Rooms:</b> 3<br>\n                <a href=\"https://www.immobiliare.it/annunci/127479878/\" target=\"_blank\" style=\"color: #3498db;\">View on immobiliare.it</a>\n            </div>\n        ", "color": "blue", "price": 247000, "id": "127479878", "removed": false}, {"lat": 45.4711, "lng": 9.3535, "popup": "\n            <div style=\"font-family: Arial, sans-serif; font-size: 12px; width: 200px; background: white; padding: 8px; border-radius: 4px;\">\n                <b>Appartamento</b><br>\n                Via Giuseppe Giusti, Rodano<br>\n                <b>Price:</b> \u20ac350,000<br>\n                <b>Size:</b> 125 m\u00b2<br>\n                <b>EUR/m\u00b2:</b> \u20ac2,800/m\u00b2<br>\n                <b>Rooms:</b> 4<br>\n                <a href=\"https://www.immobiliare.it/annunci/127581400/\" target=\"_blank\" style=\"color: #3498db;\">View on immobiliare.it</a>\n            </div>\n        ", "color": "blue", "price": 350000, "id": "127581400", "removed": false}, {"lat": 45.4687, "lng": 9.3396, "popup": "\n            <div style=\"font-family: Arial, sans-serif; font-size: 12px; width: 200px; background: white; padding: 8px; border-radius: 4px;\">\n                <b>Villa a schiera</b><br>\n                Via del Pero, Rodano<br>\n                <b>Price:</b> \u20ac269,000<br>\n                <b>Size:</b> 106 m\u00b2<br>\n                <b>EUR/m\u00b2:</b> \u20ac2,538/m\u00b2<br>\n                <b>Rooms:</b> 3<br>\n                <a href=\"https://www.immobiliare.it/annunci/125330125/\" target=\"_blank\" style=\"color: #3498db;\">View on immobiliare.it</a>\n            </div>\n        ", "color": "blue", "price": 269000, "id": "125330125", "removed": false}, {"lat": 45.4708, "lng": 9.3535, "popup": "\n            <div style=\"font-family: Arial, sans-serif; font-size: 12px; width: 200px; background: white; padding: 8px; border-radius: 4px;\">\n                <b>Appartamento</b><br>\n                Via Giuseppe Giusti, Rodano<br>\n                <b>Price:</b> \u20ac460,000<br>\n                <b>Size:</b> 133 m\u00b2<br>\n                <b>EUR/m\u00b2:</b> \u20ac3,459/m\u00b2<br>\n                <b>Rooms:</b> 4<br>\n                <a href=\"https://www.immobiliare.it/annunci/127059837/\" target=\"_blank\" style=\"color: #3498db;\">View on immobiliare.it</a>\n            </div>\n        ", "color": "orange", "price": 460000, "id": "127059837", "removed": false}, {"lat": 45.4676, "lng": 9.3373, "popup": "\n            <div style=\"font-family: Arial, sans-serif; font-size: 12px; width: 200px; background: white; padding: 8px; border-radius: 4px;\">\n                <b>Appartamento</b><br>\n                Via dei Tigli, Rodano<br>\n                <b>Price:</b> \u20ac115,000<br>\n                <b>Size:</b> 62 m\u00b2<br>\n                <b>EUR/m\u00b2:</b> \u20ac1,855/m\u00b2<br>\n                <b>Rooms:</b> 2<br>\n                <a href=\"https://www.immobiliare.it/annunci/125916717/\" target=\"_blank\" style=\"color: #3498db;\">View on immobiliare.it</a>\n            </div>\n        ", "color": "green", "price": 115000, "id": "125916717", "removed": false}, {"lat": 45.4711, "lng": 9.35346, "popup": "\n            <div style=\"font-family: Arial, sans-serif; font-size: 12px; width: 200px; background: white; padding: 8px; border-radius: 4px;\">\n                <b>Appartamento</b><br>\n                via Giusti 28, Rodano<br>\n                <b>Price:</b> \u20ac435,000<br>\n                <b>Size:</b> 144 m\u00b2<br>\n                <b>EUR/m\u00b2:</b> \u20ac3,021/m\u00b2<br>\n                <b>Rooms:</b> 4<br>\n                <a href=\"https://www.immobiliare.it/annunci/119099603/\" target=\"_blank\" style=\"color: #3498db;\">View on immobiliare.it</a>\n            </div>\n        ", "color": "orange", "price": 435000, "id": "119099603", "removed": false}, {"lat": 45.4676, "lng": 9.33693, "popup": "\n            <div style=\"font-family: Arial, sans-serif; font-size: 12px; width: 200px; background: white; padding: 8px; border-radius: 4px;\">\n                <b>Appartamento</b><br>\n                VIA DEI TIGLI, Rodano<br>\n                <b>Price:</b> \u20ac139,000<br>\n                <b>Size:</b> 70 m\u00b2<br>\n                <b>EUR/m\u00b2:</b> \u20ac1,986/m\u00b2<br>\n                <b>Rooms:</b> 2<br>\n                <a href=\"https://www.immobiliare.it/annunci/127016559/\" target=\"_blank\" style=\"color: #3498db;\">View on immobiliare.it</a>\n            </div>\n        ", "color": "green", "price": 139000, "id": "127016559", "removed": false}, {"lat": 45.4711, "lng": 9.3535, "popup": "\n            <div style=\"font-family: Arial, sans-serif; font-size: 12px; width: 200px; background: white; padding: 8px; border-radius: 4px;\">\n                <b>Appartamento</b><br>\n                Via Giuseppe Giusti, Rodano<br>\n                <b>Price:</b> \u20ac380,000<br>\n                <b>Size:</b> 124 m\u00b2<br>\n                <b>EUR/m\u00b2:</b> \u20ac3,072/m\u00b2<br>\n                <b>Rooms:</b> 3<br>\n                <a href=\"https://www.immobiliare.it/annunci/126926993/\" target=\"_blank\" style=\"color: #3498db;\">View on immobiliare.it</a>\n            </div>\n        ", "color": "blue", "price": 380000, "id": "126926993", "removed": false}, {"lat": 45.4688, "lng": 9.3391, "popup": "\n            <div style=\"font-family: Arial, sans-serif; font-size: 12px; width: 200px; background: white; padding: 8px; border-radius: 4px;\">\n                <b>Villa bifamiliare</b><br>\n                Via dell'Ontano, Rodano<br>\n                <b>Price:</b> \u20ac359,000<br>\n                <b>Size:</b> 190 m\u00b2<br>\n                <b>EUR/m\u00b2:</b> \u20ac1,889/m\u00b2<br>\n                <b>Rooms:</b> 4<br>\n                <a href=\"https://www.immobiliare.it/annunci/120768496/\" target=\"_blank\" style=\"color: #3498db;\">View on immobiliare.it</a>\n            </div>\n        ", "color": "blue", "price": 359000, "id": "120768496", "removed": false}, {"lat": 45.4832, "lng": 9.3425, "popup": "\n            <div style=\"font-family: Arial, sans-serif; font-size: 12px; width: 200px; background: white; padding: 8px; border-radius: 4px;\">\n                <b>Appartamento</b><br>\n                Via Milano, Rodano<br>\n                <b>Price:</b> \u20ac115,000<br>\n                <b>Size:</b> 55 m\u00b2<br>\n                <b>EUR/m\u00b2:</b> \u20ac2,091/m\u00b2<br>\n                <b>Rooms:</b> 1<br>\n                <a href=\"https://www.immobiliare.it/annunci/127187915/\" target=\"_blank\" style=\"color: #3498db;\">View on immobiliare.it</a>\n            </div>\n        ", "color": "green", "price": 115000, "id": "127187915", "removed": false}, {"lat": 45.469, "lng": 9.3392, "popup": "\n            <div style=\"font-family: Arial, sans-serif; font-size: 12px; width: 200px; background: white; padding: 8px; border-radius: 4px;\">\n                <b>Villa a schiera</b><br>\n                Via dell'Ontano, Rodano<br>\n                <b>Price:</b> \u20ac310,000<br>\n                <b>Size:</b> 132 m\u00b2<br>\n                <b>EUR/m\u00b2:</b> \u20ac2,348/m\u00b2<br>\n                <b>Rooms:</b> 3<br>\n                <a href=\"https://www.immobiliare.it/annunci/126786619/\" target=\"_blank\" style=\"color: #3498db;\">View on immobiliare.it</a>\n            </div>\n        ", "color": "blue", "price": 310000, "id": "126786619", "removed": false}, {"lat": 45.4711, "lng": 9.3535, "popup": "\n            <div style=\"font-family: Arial, sans-serif; font-size: 12px; width: 200px; background: white; padding: 8px; border-radius: 4px;\">\n                <b>Appartamento</b><br>\n                Via Giuseppe Giusti, Rodano<br>\n                <b>Price:</b> \u20ac320,000<br>\n                <b>Size:</b> 110 m\u00b2<br>\n                <b>EUR/m\u00b2:</b> \u20ac2,909/m\u00b2<br>\n                <b>Rooms:</b> 3<br>\n                <a href=\"https://www.immobiliare.it/annunci/126926703/\" target=\"_blank\" style=\"color: #3498db;\">View on immobiliare.it</a>\n            </div>\n        ", "color": "blue", "price": 320000, "id": "126926703", "removed": false}, {"lat": 45.4667, "lng": 9.3375, "popup": "\n            <div style=\"font-family: Arial, sans-serif; font-size: 12px; width: 200px; background: white; padding: 8px; border-radius: 4px;\">\n                <b>Appartamento</b><br>\n                Via dei Tigli, Rodano<br>\n                <b>Price:</b> \u20ac145,000<br>\n                <b>Size:</b> 110 m\u00b2<br>\n                <b>EUR/m\u00b2:</b> \u20ac1,318/m\u00b2<br>\n                <b>Rooms:</b> 3<br>\n                <a href=\"https://www.immobiliare.it/annunci/107038817/\" target=\"_blank\" style=\"color: #3498db;\">View on immobiliare.it</a>\n            </div>\n        ", "color": "green", "price": 145000, "id": "107038817", "removed": false}, {"lat": 45.4824, "lng": 9.34184, "popup": "\n            <div style=\"font-family: Arial, sans-serif; font-size: 12px; width: 200px; background: white; padding: 8px; border-radius: 4px;\">\n                <b>Appartamento</b><br>\n                Via Interna 7, Rodano<br>\n                <b>Price:</b> \u20ac100,000<br>\n                <b>Size:</b> 66 m\u00b2<br>\n                <b>EUR/m\u00b2:</b> \u20ac1,515/m\u00b2<br>\n                <b>Rooms:</b> 2<br>\n                <a href=\"https://www.immobiliare.it/annunci/117873285/\" target=\"_blank\" style=\"color: #3498db;\">View on immobiliare.it</a>\n            </div>\n        ", "color": "green", "price": 100000, "id": "117873285", "removed": false}];
+            
+            const colorMap = {
+                'green': '#2ecc71',
+                'blue': '#3498db',
+                'orange': '#f39c12',
+                'red': '#e74c3c',
+                'gray': '#95a5a6'
+            };
+            
+            // Store marker layers for toggling
+            const markerLayers = {
+                active: [],
+                removed: []
+            };
+            
+            markers.forEach(marker => {
+                const isRemoved = marker.removed === true;
+                const markerOptions = {
+                    color: 'white',
+                    fillColor: isRemoved ? '#bdc3c7' : colorMap[marker.color],
+                    fillOpacity: isRemoved ? 0.4 : 0.7,
+                    weight: isRemoved ? 1 : 2,
+                    opacity: isRemoved ? 0.6 : 1,
+                    radius: 7,
+                    dashArray: isRemoved ? '2, 2' : undefined
+                };
+                
+                const circleMarker = L.circleMarker([marker.lat, marker.lng], markerOptions)
+                    .bindPopup(marker.popup);
+                
+                circleMarker.addTo(map);
+                
+                if (isRemoved) {
+                    markerLayers.removed.push(circleMarker);
+                } else {
+                    markerLayers.active.push(circleMarker);
+                }
+            });
+            
+            // Add legend with toggle
+            const info = L.control({position: 'topleft'});
+            info.onAdd = function(map) {
+                const div = L.DomUtil.create('div', 'info');
+                div.innerHTML = '<h4>Rodano Listings</h4>' +
+                    '<div class="legend">' +
+                    '<i style="background: #2ecc71;"></i> < €200k<br>' +
+                    '<i style="background: #3498db;"></i> €200k - €400k<br>' +
+                    '<i style="background: #f39c12;"></i> €400k - €600k<br>' +
+                    '<i style="background: #e74c3c;"></i> > €600k<br>' +
+                    '</div>' +
+                    '<div class="checkbox-item">' +
+                    '<input type="checkbox" id="showRemoved" />' +
+                    '<label for="showRemoved"> Show removed/sold (0)</label>' +
+                    '</div>' +
+                    '<div class="stats">' +
+                    'Active: 25<br>' +
+                    'Removed: 0' +
+                    '</div>';
+                
+                L.DomEvent.disableClickPropagation(div);
+                
+                const checkbox = div.querySelector('#showRemoved');
+                checkbox.addEventListener('change', function(e) {
+                    if (e.target.checked) {
+                        markerLayers.removed.forEach(m => m.addTo(map));
+                    } else {
+                        markerLayers.removed.forEach(m => map.removeLayer(m));
+                    }
+                });
+                
+                // Initialize visibility
+                if (!checkbox.checked) {
+                    markerLayers.removed.forEach(m => map.removeLayer(m));
+                }
+                
+                return div;
+            };
+            info.addTo(map);
+        </script>
+    </body>
+    </html>
+    

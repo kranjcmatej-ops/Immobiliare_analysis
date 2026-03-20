@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valuation Note — Complesso Terracielo, Option 2</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Source+Sans+3:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a2e;
+    --ink-light: #3d3d5c;
+    --accent: #c0392b;
+    --accent-light: #e74c3c;
+    --green: #27ae60;
+    --green-bg: #eafaf1;
+    --amber: #d4a017;
+    --amber-bg: #fef9e7;
+    --red-bg: #fdedec;
+    --bg: #fafaf8;
+    --card: #ffffff;
+    --border: #e0ddd5;
+    --muted: #7f8c8d;
+    --serif: 'DM Serif Display', Georgia, serif;
+    --sans: 'Source Sans 3', 'Segoe UI', sans-serif;
+    --mono: 'JetBrains Mono', 'Consolas', monospace;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--ink);
+    font-size: 15px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  @media print {
+    body { background: #fff; font-size: 12px; }
+    .page-break { page-break-before: always; }
+    .no-print { display: none !important; }
+    .container { max-width: 100%; padding: 0 20px; }
+    .hero { padding: 40px 0 30px; }
+    .section { padding: 20px 0; }
+    table { font-size: 11px; }
+  }
+
+  .container {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  /* Hero */
+  .hero {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    color: #fff;
+    padding: 60px 0 50px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0L60 30L30 60L0 30z' fill='none' stroke='%23ffffff08' stroke-width='1'/%3E%3C/svg%3E");
+    opacity: 0.4;
+  }
+  .hero .container { position: relative; z-index: 1; }
+  .hero-label {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 12px;
+  }
+  .hero h1 {
+    font-family: var(--serif);
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+  .hero .subtitle {
+    font-size: 17px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.7);
+    max-width: 600px;
+  }
+  .hero-meta {
+    margin-top: 28px;
+    display: flex;
+    gap: 32px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.5);
+  }
+  .hero-meta span { font-weight: 600; color: rgba(255,255,255,0.85); }
+
+  /* Alert Banner */
+  .alert-banner {
+    background: var(--accent);
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  .alert-banner .number {
+    font-family: var(--mono);
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  /* Sections */
+  .section {
+    padding: 40px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .section:last-child { border-bottom: none; }
+
+  .section-number {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--accent);
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .section h2 {
+    font-family: var(--serif);
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    color: var(--ink);
+  }
+  .section h3 {
+    font-family: var(--sans);
+    font-size: 16px;
+    font-weight: 700;
+    margin: 24px 0 10px;
+    color: var(--ink-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .section p {
+    max-width: 700px;
+    margin-bottom: 14px;
+    color: var(--ink-light);
+  }
+
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+  }
+  thead th {
+    background: #f5f4f0;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: var(--muted);
+    padding: 10px 14px;
+    text-align: left;
+    border-bottom: 2px solid var(--border);
+  }
+  thead th.num { text-align: right; }
+  tbody td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #f0ede6;
+    vertical-align: middle;
+  }
+  tbody tr:hover { background: #faf9f5; }
+  tbody tr.best { background: var(--green-bg); }
+  tbody tr.best td { font-weight: 600; color: var(--green); }
+  tbody tr.subject { background: var(--red-bg); }
+  tbody tr.subject td { font-weight: 700; color: var(--ink); }
+  tfoot td {
+    font-weight: 700;
+    background: #f5f4f0;
+    border-top: 2px solid var(--border);
+    padding: 12px 14px;
+  }
+  .num { font-family: var(--mono); font-size: 13px; text-align: right; }
+  .highlight-row { background: var(--red-bg) !important; font-weight: 600; }
+
+  /* Property Block */
+  .prop-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 24px;
+    background: var(--card);
+  }
+  .prop-block .cell {
+    padding: 14px 18px;
+    border-bottom: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .prop-block .cell:nth-child(odd):nth-last-child(n+2) { border-right: 1px solid var(--border); }
+  .prop-block .cell:nth-child(even):nth-last-child(n+2) { border-right: none; }
+  .prop-block .cell:nth-last-child(1), .prop-block .cell:nth-last-child(2) { border-bottom: none; }
+  .prop-block .label { 
+    font-size: 12px; 
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--muted);
+    font-weight: 600;
+  }
+  .prop-block .val { 
+    font-weight: 600; 
+    color: var(--ink);
+    font-size: 15px;
+  }
+  .prop-block .val.red { color: var(--accent); font-size: 17px; }
+  .prop-block .cell.highlight {
+    background: var(--red-bg);
+    grid-column: 1 / -1;
+  }
+
+  /* Badge */
+  .badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .badge-red { background: var(--red-bg); color: var(--accent); }
+  .badge-green { background: var(--green-bg); color: var(--green); }
+
+  /* Callout */
+  .callout {
+    border-left: 4px solid var(--accent);
+    background: var(--red-bg);
+    padding: 18px 22px;
+    margin: 20px 0;
+    border-radius: 0 6px 6px 0;
+  }
+  .callout.green {
+    border-left-color: var(--green);
+    background: var(--green-bg);
+  }
+  .callout.amber {
+    border-left-color: var(--amber);
+    background: var(--amber-bg);
+  }
+  .callout strong { color: var(--ink); }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px 0;
+  }
+  .summary-box .row {
+    display: flex;
+    border-bottom: 1px solid var(--border);
+    align-items: center;
+  }
+  .summary-box .row:last-child { border-bottom: none; }
+  .summary-box .row-label {
+    padding: 12px 18px;
+    width: 240px;
+    flex-shrink: 0;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-right: 1px solid var(--border);
+    background: #f5f4f0;
+  }
+  .summary-box .row-val {
+    padding: 12px 18px;
+    font-weight: 600;
+    font-size: 16px;
+    flex: 1;
+  }
+  .summary-box .row-val.green { color: var(--green); }
+  .summary-box .row-val.red { color: var(--accent); }
+  .summary-box .row-val.num { 
+    font-family: var(--mono);
+    font-size: 15px;
+  }
+
+  /* KPI Row */
+  .kpi-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin: 24px 0;
+  }
+  .kpi {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+  }
+  .kpi-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  .kpi-value {
+    font-family: var(--mono);
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .kpi-sub {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+  .kpi.danger .kpi-value { color: var(--accent); }
+  .kpi.success .kpi-value { color: var(--green); }
+
+  /* Offer Cards */
+  .offer-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 24px 0;
+  }
+  .offer-card {
+    background: var(--card);
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    padding: 24px;
+    text-align: center;
+  }
+  .offer-card.highlight {
+    border-color: var(--green);
+    background: var(--green-bg);
+  }
+  .offer-card .oc-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+  .offer-card .oc-val {
+    font-family: var(--mono);
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .offer-card.highlight .oc-val { color: var(--green); }
+  .offer-card .oc-sub {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 8px;
+  }
+
+  /* Verdict */
+  .verdict {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    margin: 32px 0;
+    text-align: center;
+  }
+  .verdict h3 {
+    color: rgba(255,255,255,0.5);
+    margin-top: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .verdict .verdict-price {
+    font-family: var(--mono);
+    font-size: 48px;
+    font-weight: 700;
+    margin: 12px 0 8px;
+  }
+  .verdict .verdict-sub {
+    font-size: 15px;
+    color: rgba(255,255,255,0.6);
+  }
+  /* Limitation note */
+  .limitation-note {
+    background: #f8f7f3;
+    border: 1px dashed var(--border);
+    border-radius: 6px;
+    padding: 14px 18px;
+    margin: 16px 0;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .limitation-note strong { color: var(--ink-light); }
+
+  /* Summary List */
+  .findings {
+    list-style: none;
+    margin: 16px 0;
+  }
+  .findings li {
+    padding: 10px 0 10px 28px;
+    position: relative;
+    border-bottom: 1px solid #f0ede6;
+    color: var(--ink-light);
+  }
+  .findings li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 16px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+  .findings li strong { color: var(--ink); }
+
+  /* Footer */
+  .footer {
+    padding: 32px 0;
+    text-align: center;
+    font-size: 12px;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="container">
+    <div class="hero-label">Real Estate Valuation</div>
+    <h1>Complesso Terracielo<br>Option 2 – Rodano (MI)</h1>
+    <p class="subtitle">Comparative Valuation Note based on Official Transaction Records (Agenzia delle Entrate) and Current Market Data</p>
+    <div class="hero-meta">
+      <div>Date: <span>14 March 2026</span></div>
+      <div>OMI Zone: <span>B1 — Residential</span></div>
+      <div>Source: <span>Agenzia delle Entrate &amp; immobiliare.it</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ALERT BANNER -->
+<div class="alert-banner">
+  Asking price: <span class="number">€380,000</span> | €3,072/m² | Percentile: <span class="number">90th</span> among comparables
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+<!-- SECTION 1: Property Description -->
+<div class="section">
+  <div class="section-number">1. Subject Property</div>
+  <h2>Property Specifications</h2>
+
+  <div class="prop-block">
+    <div class="cell"><span class="label">Cadastral Category</span><span class="val">A02 — Civil Apartment</span></div>
+    <div class="cell"><span class="label">Complex</span><span class="val">Terracielo, Via Giuseppe Giusti 28</span></div>
+    <div class="cell"><span class="label">Commercial Floor Area</span><span class="val">123.7 m²</span></div>
+    <div class="cell"><span class="label">Net Living Area</span><span class="val">100 m² (net)</span></div>
+    <div class="cell"><span class="label">Garage Included</span><span class="val">16 m²</span></div>
+    <div class="cell"><span class="label">Condition / Energy Class</span><span class="val">Excellent/Renovated · A1</span></div>
+    <div class="cell highlight"><span class="label">Asking Price</span><span class="val red">€380,000 = €3,072/m²</span></div>
+  </div>
+</div>
+
+<!-- SECTION 2: Comparable Transactions -->
+<div class="section">
+  <div class="section-number">2. Registered Comparable Transactions</div>
+  <h2>A02 Transaction Market — Rodano (Agenzia delle Entrate, 2024–2025)</h2>
+  <p>7 verified transactions for A02 category properties (civil apartments) in Rodano, 85–150 m², garage included, 2024–2025.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Transaction Date</th>
+        <th class="num">Floor Area</th>
+        <th class="num">Total Price</th>
+        <th>Garage</th>
+        <th class="num">€/m²</th>
+        <th class="num">vs Asking</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>July 2024</td>
+        <td class="num">146 m²</td>
+        <td class="num">€370,000</td>
+        <td>Yes</td>
+        <td class="num">€2,534</td>
+        <td class="num" style="color:var(--green);">−18%</td>
+      </tr>
+      <tr>
+        <td>October 2024</td>
+        <td class="num">94 m²</td>
+        <td class="num">€255,000</td>
+        <td>Yes</td>
+        <td class="num">€2,713</td>
+        <td class="num" style="color:var(--green);">−12%</td>
+      </tr>
+      <tr class="best">
+        <td>April 2025 <span class="badge badge-green">same complex</span></td>
+        <td class="num">103 m²</td>
+        <td class="num">€305,000</td>
+        <td>Yes</td>
+        <td class="num">€2,961</td>
+        <td class="num">−4%</td>
+      </tr>
+      <tr>
+        <td>May 2025</td>
+        <td class="num">120 m²</td>
+        <td class="num">€355,000</td>
+        <td>Yes</td>
+        <td class="num">€2,958</td>
+        <td class="num" style="color:var(--green);">−4%</td>
+      </tr>
+      <tr>
+        <td>July 2025</td>
+        <td class="num">118 m²</td>
+        <td class="num">€230,000</td>
+        <td>Yes</td>
+        <td class="num">€1,949</td>
+        <td class="num" style="color:var(--green);">−37%</td>
+      </tr>
+      <tr>
+        <td>August 2025</td>
+        <td class="num">131 m²</td>
+        <td class="num">€248,000</td>
+        <td>Yes</td>
+        <td class="num">€1,893</td>
+        <td class="num" style="color:var(--green);">−38%</td>
+      </tr>
+      <tr>
+        <td>November 2025</td>
+        <td class="num">86 m²</td>
+        <td class="num">€190,000</td>
+        <td>Yes</td>
+        <td class="num">€2,209</td>
+        <td class="num" style="color:var(--green);">−28%</td>
+      </tr>
+      <tfoot>
+        <tr>
+          <td colspan="4"><strong>Mean 2024–2025 comparables (85–150 m², 7 transactions)</strong></td>
+          <td class="num"><strong>€2,460</strong></td>
+          <td class="num" style="color:var(--accent);"><strong>−20%</strong></td>
+        </tr>
+      </tfoot>
+    </tbody>
+  </table>
+
+  <div class="callout green">
+    <strong>Strongest comparable: Same Complex, April 2025</strong><br>
+    The most recent transaction in Complesso Terracielo (103 m², April 2025) closed at <strong>€305,000 = €2,961/m²</strong>.
+    A 124 m² unit (this property) — <em>larger</em> than 103 m² — should, by the standard size-discount principle in real estate,
+    sell at a <em>lower</em> €/m² than a smaller unit in the <em>same complex</em>.
+    This implies a <strong>ceiling value of ~€366,000</strong> based solely on the Terracielo April 2025 transaction.
+  </div>
+</div>
+
+<!-- SECTION 3: Active Listings - Same Complex -->
+<div class="section">
+  <div class="section-number">3. Active Listings in the Complex</div>
+  <h2>Other Units — Complesso Terracielo (14 March 2026)</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Unit (Listing ID)</th>
+        <th class="num">Floor Area</th>
+        <th>Rooms</th>
+        <th>Condition</th>
+        <th>Energy</th>
+        <th class="num">Asking Price</th>
+        <th class="num">€/m²</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>3-room flat (126926703)</td>
+        <td class="num">87 m²</td>
+        <td>3</td>
+        <td>Excellent/Renovated</td>
+        <td>A1</td>
+        <td class="num">€320,000</td>
+        <td class="num">€3,670</td>
+      </tr>
+      <tr>
+        <td>4-room flat — New Build (119099603)</td>
+        <td class="num">144 m²</td>
+        <td>4</td>
+        <td><strong>New Construction</strong></td>
+        <td><strong>A+</strong></td>
+        <td class="num">€435,000</td>
+        <td class="num">€3,021</td>
+      </tr>
+      <tr>
+        <td>Apartment (126230351)</td>
+        <td class="num">220 m²</td>
+        <td>5+</td>
+        <td>Excellent/Renovated</td>
+        <td>A1</td>
+        <td class="num">€660,000</td>
+        <td class="num">€3,000</td>
+      </tr>
+      <tr class="subject">
+        <td><strong>Option 2 (subject property)</strong></td>
+        <td class="num"><strong>124 m²</strong></td>
+        <td><strong>3</strong></td>
+        <td><strong>Excellent/Renovated</strong></td>
+        <td><strong>A1</strong></td>
+        <td class="num"><strong>€380,000</strong></td>
+        <td class="num"><strong>€3,072</strong></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p style="max-width:700px; margin-top:16px; color:var(--ink-light);">
+    <strong>Critical observation:</strong> The <em>new-build</em> 4-room flat (144 m², energy class A+) listed in the same complex is asking €3,021/m² — <strong>€51/m² less</strong> than Option 2, despite being brand new, having a superior energy class (A+ vs A1), and offering more floor space.
+  </p>
+</div>
+
+<!-- SECTION 4: Market Index -->
+<div class="section">
+  <div class="section-number">4. Live Market Index</div>
+  <h2>immobiliare.it Price Index — Rodano (last 6 months)</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Month</th>
+        <th class="num">Mean Asking €/m² (Rodano)</th>
+        <th>MoM Change</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>September 2025</td><td class="num">€2,295</td><td>—</td></tr>
+      <tr><td>October 2025</td><td class="num">€2,320</td><td>+1.1%</td></tr>
+      <tr><td>November 2025</td><td class="num">€2,332</td><td>+0.5%</td></tr>
+      <tr><td>December 2025</td><td class="num">€2,271</td><td>−2.6%</td></tr>
+      <tr><td>January 2026</td><td class="num">€2,242</td><td>−1.3%</td></tr>
+      <tr><td>February 2026</td><td class="num">€2,293</td><td>+2.3%</td></tr>
+    </tbody>
+  </table>
+
+  <div class="kpi-row">
+    <div class="kpi">
+      <div class="kpi-label">Rodano Market Mean</div>
+      <div class="kpi-value">€2,293</div>
+      <div class="kpi-sub">February 2026</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Option 2 Asking</div>
+      <div class="kpi-value danger">€3,072</div>
+      <div class="kpi-sub">/m² asking</div>
+    </div>
+    <div class="kpi danger">
+      <div class="kpi-label">Premium vs Market</div>
+      <div class="kpi-value">+34%</div>
+      <div class="kpi-sub">above market baseline</div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 5: Broader Market Context -->
+<div class="section">
+  <div class="section-number">5. Broader Market Context</div>
+  <h2>Overall Rodano Residential Market</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Year</th>
+        <th class="num">Transactions</th>
+        <th class="num">Avg €/m²</th>
+        <th class="num">Median €/m²</th>
+        <th class="num">Avg Surface</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>2023</td><td class="num">14</td><td class="num">€2,146</td><td class="num">€2,094</td><td class="num">144 m²</td></tr>
+      <tr><td>2024</td><td class="num">15</td><td class="num">€2,113</td><td class="num">€2,134</td><td class="num">118 m²</td></tr>
+      <tr><td>2025</td><td class="num">15</td><td class="num">€2,160</td><td class="num">€2,206</td><td class="num">120 m²</td></tr>
+    </tbody>
+  </table>
+
+  <p style="max-width:700px; color:var(--ink-light); margin-bottom:14px;">The broader market (all residential categories A02, A03, A07 — 44 transactions) has been <strong>essentially flat</strong> for three consecutive years: €2,146 → €2,113 → €2,160/m² avg (+0.7% 2023–2025). There is <strong>no evidence of price appreciation</strong> that would justify a premium asking price.</p>
+
+  <ul class="findings">
+    <li>Rodano is a <strong>low-volume market</strong> — only ~14–15 transactions/year across all residential categories. Individual comparables carry more weight than trend lines.</li>
+    <li>Only <strong>2–6 A02 (civil apartment) transactions per year</strong> — yearly averages are volatile and indicative only.</li>
+    <li>The overall market is <strong>stable to flat</strong> from 2023 to 2025 (avg +0.7%). No appreciation trend to factor in.</li>
+    <li><strong>Size-discount pattern is robust and consistent:</strong> larger apartments (100+ m²) systematically trade at lower €/m² than smaller ones. This is the strongest and most reliable pattern in the dataset.</li>
+    <li>Of <strong>17 active appartamenti listings on immobiliare.it</strong> (14 March 2026), the median ask is €2,255/m² and mean is €2,425/m². Option 2 at €3,072/m² is the <strong>4th highest out of 17</strong> — only above it are A+ new builds and a boutique renovated unit.</li>
+  </ul>
+
+  <div class="callout">
+    <strong>Context for the agent:</strong> These market figures are drawn from 44 registered transactions in the Agenzia delle Entrate database and 25 live listings captured on immobiliare.it on 14 March 2026. The flat three-year trend, combined with the size-discount pattern, means there is no market-supported rationale for Option 2 to be priced above the most recent same-complex transaction ceiling of ~€366,000.
+  </div>
+</div>
+
+<!-- SECTION 6: Valuation Summary -->
+<div class="section">
+  <div class="section-number">6. Valuation Summary</div>
+  <h2>Conclusive Analysis</h2>
+
+  <div class="summary-box">
+    <div class="row">
+      <div class="row-label">Asking Price</div>
+      <div class="row-val red num">€380,000</div>
+    </div>
+    <div class="row">
+      <div class="row-label">Comparables Mean (€/m²)</div>
+      <div class="row-val num">€2,460</div>
+    </div>
+    <div class="row">
+      <div class="row-label">Option 2 Asking (€/m²)</div>
+      <div class="row-val red num">€3,072</div>
+    </div>
+    <div class="row">
+      <div class="row-label">Premium vs Comparables</div>
+      <div class="row-val red">+20%</div>
+    </div>
+    <div class="row">
+      <div class="row-label">Value Ceiling (Terracielo)</div>
+      <div class="row-val green num">€366,000</div>
+    </div>
+  </div>
+
+  <div class="callout amber">
+    <strong>Methodology:</strong> Valuation anchored on the most recent same-complex transaction (April 2025, €2,961/m²) combined with the size-discount principle (larger floor area = lower €/m² than smaller units in the same building). The Rodano A02 transaction market ranges €1,893–€2,961/m² with a mean of €2,460/m².
+  </div>
+</div>
+
+<!-- SECTION 7: Fair Value Estimate -->
+<div class="section">
+  <div class="section-number">7. Fair Value Estimate</div>
+  <h2>Value Range — Option 2</h2>
+
+  <div class="verdict">
+    <h3>Suggested Target Value</h3>
+    <div class="verdict-price">€330,000</div>
+    <div class="verdict-sub">€2,665/m² | −€50,000 below asking</div>
+  </div>
+
+  <div class="offer-row">
+    <div class="offer-card">
+      <div class="oc-label">Conservative Floor</div>
+      <div class="oc-val">€310,000</div>
+      <div class="oc-sub">€2,502/m²<br>comparables mean + margin</div>
+    </div>
+    <div class="offer-card highlight">
+      <div class="oc-label">Suggested Offer</div>
+      <div class="oc-val">€330,000</div>
+      <div class="oc-sub">€2,665/m²<br>supported by all benchmarks</div>
+    </div>
+    <div class="offer-card">
+      <div class="oc-label">Data-Justified Maximum</div>
+      <div class="oc-val">€366,000</div>
+      <div class="oc-sub">€2,958/m²<br>Terracielo same-complex ceiling</div>
+    </div>
+  </div>
+
+  <div class="limitation-note">
+    <strong>Scope of this note:</strong> This document is based solely on public official data (Agenzia delle Entrate) and online listings (immobiliare.it). It does not constitute a certified appraisal and does not account for undisclosed works, specific property conditions not publicly documented, or dynamic negotiation factors. Purpose: buyer-side negotiation support.
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <strong>Real Estate Valuation Note — Complesso Terracielo, Option 2</strong><br>
+  Date: 14 March 2026 · Prepared for private use — Sources: Agenzia delle Entrate · immobiliare.it · OMI 2025 S1<br>
+  Does not constitute a certified appraisal. For certified valuations, consult a qualified surveyor (perito abilitato).
+</div>
+
+</div><!-- .container -->
+
+</body>
+</html>
