@@ -249,21 +249,8 @@
                     '<i style="background: #3498db;"></i> €200k – €400k<br>' +
                     '<i style="background: #f39c12;"></i> €400k – €600k<br>' +
                     '<i style="background: #e74c3c;"></i> > €600k<br>' +
-                    '</div>' +
-                    '<div class="checkbox-item">' +
-                    '<input type="checkbox" id="showRemoved" />' +
-                    '<label for="showRemoved"> Show removed/sold (0)</label>' +
-                    '</div>' +
-                    '<div class="stats">' +
-                    'Active: 25<br>' +
-                    'Removed: 0' +
                     '</div>';
                 L.DomEvent.disableClickPropagation(div);
-                const checkbox = div.querySelector('#showRemoved');
-                checkbox.addEventListener('change', function(e) {
-                    if (e.target.checked) map.addLayer(removedMarkers);
-                    else map.removeLayer(removedMarkers);
-                });
                 map.removeLayer(removedMarkers);
                 return div;
             };
