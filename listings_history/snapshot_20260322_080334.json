@@ -1,0 +1,1491 @@
+{
+  "snapshot_time": "2026-03-22T08:03:34",
+  "capture_date": "2026-03-14",
+  "listings": [
+    {
+      "id": "127161945",
+      "type": "Villa a schiera",
+      "price": 460000,
+      "size_m2": 150.0,
+      "eur_per_m2": 3067,
+      "url": "https://www.immobiliare.it/annunci/127161945/",
+      "first_seen": "2026-03-14",
+      "rooms": "4",
+      "bathrooms": "2",
+      "condition": "Ottimo / Ristrutturato",
+      "energy_class": "D",
+      "floor": "interrato (-1), piano terra, piano rialz",
+      "title": "Villa a schiera via Giuseppe Giusti 33, Lucino Rodano, Rodano",
+      "posted_date": "2026-03-02",
+      "detail_fetched": "2026-03-20",
+      "latitude": 45.471,
+      "longitude": 9.3541,
+      "address": "Via Giuseppe Giusti",
+      "location": "Lucino Rodano",
+      "city": "Rodano"
+    },
+    {
+      "id": "125434549",
+      "type": "Villa unifamiliare",
+      "price": 772000,
+      "size_m2": 320.0,
+      "eur_per_m2": 2412,
+      "url": "https://www.immobiliare.it/annunci/125434549/",
+      "first_seen": "2026-03-14",
+      "rooms": "5+",
+      "bathrooms": "3",
+      "condition": "Buono / Abitabile",
+      "energy_class": "G",
+      "floor": "piano terra",
+      "title": "Villa unifamiliare via Fonte, Lucino Rodano, Rodano",
+      "posted_date": "2025-12-17",
+      "detail_fetched": "2026-03-20",
+      "latitude": 45.4777,
+      "longitude": 9.3505,
+      "address": "Via Fonte",
+      "location": "Lucino Rodano",
+      "city": "Rodano"
+    },
+    {
+      "id": "127441340",
+      "type": "Villa bifamiliare",
+      "price": 480000,
+      "size_m2": 184.0,
+      "eur_per_m2": 2609,
+      "url": "https://www.immobiliare.it/annunci/127441340/",
+      "first_seen": "2026-03-15",
+      "rooms": "5",
+      "bathrooms": "2",
+      "condition": "Buono / Abitabile",
+      "energy_class": "E",
+      "floor": "piano rialzato, 1",
+      "title": "Villa bifamiliare via Guglielmo Marconi 9, Lucino Rodano, Rodano",
+      "posted_date": "2026-03-12",
+      "detail_fetched": "2026-03-20",
+      "latitude": 45.4735,
+      "longitude": 9.3563,
+      "address": "Via Guglielmo Marconi 9",
+      "location": "Lucino Rodano",
+      "city": "Rodano"
+    },
+    {
+      "id": "124775013",
+      "type": "Appartamento",
+      "price": 239000,
+      "size_m2": 106.0,
+      "eur_per_m2": 2255,
+      "url": "https://www.immobiliare.it/annunci/124775013/",
+      "first_seen": "2026-03-14",
+      "rooms": "3",
+      "bathrooms": "2",
+      "condition": "Buono / Abitabile",
+      "energy_class": "F",
+      "floor": "1 piano",
+      "title": "Trilocale via Bologna 3, Millepini, Rodano",
+      "posted_date": "2025-11-19",
+      "detail_fetched": "2026-03-20",
+      "latitude": 45.4654,
+      "longitude": 9.3386,
+      "address": "Via Bologna 3",
+      "location": "Millepini",
+      "city": "Rodano"
+    },
+    {
+      "id": "121435942",
+      "type": "Villa unifamiliare",
+      "price": 990000,
+      "size_m2": 470.0,
+      "eur_per_m2": 2106,
+      "url": "https://www.immobiliare.it/annunci/121435942/",
+      "first_seen": "2026-03-14",
+      "rooms": "5+",
+      "bathrooms": "3",
+      "condition": "Ottimo / Ristrutturato",
+      "energy_class": "B",
+      "floor": "piano terra",
+      "title": "Villa unifamiliare via Ariosto 9, Lucino Rodano, Rodano",
+      "posted_date": "2025-06-18",
+      "detail_fetched": "2026-03-20",
+      "latitude": 45.4721,
+      "longitude": 9.35681,
+      "address": "Via Ariosto",
+      "location": "Lucino Rodano",
+      "city": "Rodano"
+    },
+    {
+      "id": "125159037",
+      "type": "Villa bifamiliare",
+      "price": 370000,
+      "size_m2": 270.0,
+      "eur_per_m2": 1370,
+      "url": "https://www.immobiliare.it/annunci/125159037/",
+      "first_seen": "2026-03-14",
+      "rooms": "4",
+      "bathrooms": "2",
+      "condition": "Da ristrutturare",
+      "energy_class": null,
+      "floor": "da 1 a 2",
+      "title": "Villa bifamiliare via Giuseppe Parini 2, Lucino Rodano, Rodano",
+      "posted_date": "2025-12-04",
+      "detail_fetched": "2026-03-20",
+      "latitude": 45.4709,
+      "longitude": 9.357,
+      "address": "Via Giuseppe Parini",
+      "location": "Lucino Rodano",
+      "city": "Rodano"
+    },
+    {
+      "id": "125907071",
+      "type": "Appartamento",
+      "price": 119000,
+      "size_m2": 60.0,
+      "eur_per_m2": 1983,
+      "url": "https://www.immobiliare.it/annunci/125907071/",
+      "first_seen": "2026-03-14",
+      "rooms": "2",
+      "bathrooms": "1",
+      "condition": "Ottimo / Ristrutturato",
+      "energy_class": "E",
+      "floor": "2",
+      "title": "Bilocale via dei Tigli 2, Millepini, Rodano",
+      "posted_date": "2026-01-14",
+      "detail_fetched": "2026-03-20",
+      "latitude": 45.4681,
+      "longitude": 9.3364,
+      "address": "Via dei Tigli",
+      "location": "Millepini",
+      "city": "Rodano"
+    },
+    {
+      "id": "126612405",
+      "type": "Appartamento",
+      "price": null,
+      "size_m2": 175.0,
+      "eur_per_m2": null,
+      "url": "https://www.immobiliare.it/annunci/126612405/",
+      "first_seen": "2026-03-14",
+      "rooms": "5",
+      "bathrooms": "3",
+      "condition": "Ottimo / Ristrutturato",
+      "energy_class": null,
+      "floor": "interrato (-1), piano terra",
+      "title": "Appartamento via Palermo, Millepini, Rodano",
+      "posted_date": "2026-02-10",
+      "detail_fetched": "2026-03-20",
+      "latitude": 45.4644,
+      "longitude": 9.3398,
+      "address": "Via Palermo",
+      "location": "Millepini",
+      "city": "Rodano"
+    },
+    {
+      "id": "126571185",
+      "type": "Appartamento",
+      "price": 460000,
+      "size_m2": 133.0,
+      "eur_per_m2": 3459,
+      "url": "https://www.immobiliare.it/annunci/126571185/",
+      "first_seen": "2026-03-14",
+      "rooms": "4",
+      "bathrooms": "2",
+      "condition": "Ottimo / Ristrutturato",
+      "energy_class": "A+",
+      "floor": "da 1 a 2",
+      "title": "Quadrilocale via Giuseppe Giusti 24, Rodano",
+      "posted_date": "2026-02-08",
+      "detail_fetched": "2026-03-20",
+      "latitude": 45.47053528,
+      "longitude": 9.35396767,
+      "address": "Via Giuseppe Giusti",
+      "location": null,
+      "city": "Rodano"
+    },
+    {
+      "id": "127405311",
+      "type": "Appartamento",
+      "price": 189000,
+      "size_m2": 65.0,
+      "eur_per_m2": 2908,
+      "url": "https://www.immobiliare.it/annunci/127405311/",
+      "first_seen": "2026-03-14",
+      "rooms": "2",
+      "bathrooms": "1",
+      "condition": "Ottimo / Ristrutturato",
+      "energy_class": "E",
+      "floor": "piano terra",
+      "title": "Bilocale via Giuseppe Garibaldi 1, Lucino Rodano, Rodano",
+      "posted_date": "2026-03-11",
+      "detail_fetched": "2026-03-20",
+      "latitude": 45.4797,
+      "longitude": 9.35331,
+      "address": "Via Giuseppe Garibaldi",
+      "location": "Lucino Rodano",
+      "city": "Rodano"
+    },
+    {
+      "id": "127581400",
+      "type": "Appartamento",
+      "price": 350000,
+      "size_m2": 125.0,
+      "eur_per_m2": 2800,
+      "url": "https://www.immobiliare.it/annunci/127581400/",
+      "first_seen": "2026-03-20",
+      "rooms": "4",
+      "bathrooms": "2",
+      "condition": "Ottimo / Ristrutturato",
+      "energy_class": "A1",
+      "floor": "piano terra",
+      "title": "Quadrilocale via Giuseppe Giusti 28, Rodano",
+      "posted_date": "2026-03-18",
+      "detail_fetched": "2026-03-20",
+      "latitude": 45.4711,
+      "longitude": 9.3535,
+      "address": "Via Giuseppe Giusti",
+      "location": null,
+      "city": "Rodano"
+    },
+    {
+      "id": "127479878",
+      "type": "Appartamento",
+      "price": 247000,
+      "size_m2": 85.0,
+      "eur_per_m2": 2906,
+      "url": "https://www.immobiliare.it/annunci/127479878/",
+      "first_seen": "2026-03-14",
+      "rooms": "3",
+      "bathrooms": "1",
+      "condition": "Buono / Abitabile",
+      "energy_class": "G",
+      "floor": "piano terra",
+      "title": "Trilocale via Giuseppe Giusti 1, Lucino Rodano, Rodano",
+      "posted_date": "2026-03-13",
+      "detail_fetched": "2026-03-20",
+      "latitude": 45.4709,
+      "longitude": 9.3563,
+      "address": "Via Giuseppe Giusti",
+      "location": "Lucino Rodano",
+      "city": "Rodano"
+    },
+    {
+      "id": "125330125",
+      "type": "Villa a schiera",
+      "price": 269000,
+      "size_m2": 106.0,
+      "eur_per_m2": 2538,
+      "url": "https://www.immobiliare.it/annunci/125330125/",
+      "first_seen": "2026-03-14",
+      "rooms": "3",
+      "bathrooms": "2",
+      "condition": "Buono / Abitabile",
+      "energy_class": "F",
+      "floor": "piano terra",
+      "title": "Villa a schiera via del Pero 4, Millepini, Rodano",
+      "posted_date": "2025-12-12",
+      "detail_fetched": "2026-03-20",
+      "latitude": 45.4687,
+      "longitude": 9.3396,
+      "address": "Via del Pero",
+      "location": "Millepini",
+      "city": "Rodano"
+    },
+    {
+      "id": "126230351",
+      "type": "Appartamento",
+      "price": 660000,
+      "size_m2": 220.0,
+      "eur_per_m2": 3000,
+      "url": "https://www.immobiliare.it/annunci/126230351/",
+      "first_seen": "2026-03-14",
+      "rooms": "5+",
+      "bathrooms": "3",
+      "condition": "Ottimo / Ristrutturato",
+      "energy_class": "A1",
+      "floor": "piano terra",
+      "title": "Appartamento via Giuseppe Giusti 28, Rodano",
+      "posted_date": "2026-01-26",
+      "detail_fetched": "2026-03-20",
+      "latitude": 45.4711,
+      "longitude": 9.3535,
+      "address": "Via Giuseppe Giusti",
+      "location": null,
+      "city": "Rodano"
+    },
+    {
+      "id": "127059837",
+      "type": "Appartamento",
+      "price": 460000,
+      "size_m2": 133.0,
+      "eur_per_m2": 3459,
+      "url": "https://www.immobiliare.it/annunci/127059837/",
+      "first_seen": "2026-03-14",
+      "rooms": "4",
+      "bathrooms": "2",
+      "condition": "Buono / Abitabile",
+      "energy_class": "F",
+      "floor": "1",
+      "title": "Quadrilocale via Giuseppe Giusti 24, Rodano",
+      "posted_date": "2026-02-26",
+      "detail_fetched": "2026-03-20",
+      "latitude": 45.4708,
+      "longitude": 9.3535,
+      "address": "Via Giuseppe Giusti",
+      "location": null,
+      "city": "Rodano"
+    },
+    {
+      "id": "125916717",
+      "type": "Appartamento",
+      "price": 115000,
+      "size_m2": 62.0,
+      "eur_per_m2": 1855,
+      "url": "https://www.immobiliare.it/annunci/125916717/",
+      "first_seen": "2026-03-14",
+      "rooms": "2",
+      "bathrooms": "1",
+      "condition": "Ottimo / Ristrutturato",
+      "energy_class": "G",
+      "floor": "3",
+      "title": "Bilocale via dei Tigli 6, Millepini, Rodano",
+      "posted_date": "2026-01-15",
+      "detail_fetched": "2026-03-20",
+      "latitude": 45.4676,
+      "longitude": 9.3373,
+      "address": "Via dei Tigli",
+      "location": "Millepini",
+      "city": "Rodano"
+    },
+    {
+      "id": "119099603",
+      "type": "Appartamento",
+      "price": 435000,
+      "size_m2": 144.0,
+      "eur_per_m2": 3021,
+      "url": "https://www.immobiliare.it/annunci/119099603/",
+      "first_seen": "2026-03-14",
+      "rooms": "4",
+      "bathrooms": "2",
+      "condition": "Nuovo / In costruzione",
+      "energy_class": "A+",
+      "floor": "1 piano",
+      "title": "Quadrilocale via Giusti 28, Rodano",
+      "posted_date": "2025-03-12",
+      "detail_fetched": "2026-03-20",
+      "latitude": 45.4711,
+      "longitude": 9.35346,
+      "address": "via Giusti 28",
+      "location": null,
+      "city": "Rodano"
+    },
+    {
+      "id": "127016559",
+      "type": "Appartamento",
+      "price": 139000,
+      "size_m2": 70.0,
+      "eur_per_m2": 1986,
+      "url": "https://www.immobiliare.it/annunci/127016559/",
+      "first_seen": "2026-03-14",
+      "rooms": "2",
+      "bathrooms": "1",
+      "condition": "Buono / Abitabile",
+      "energy_class": null,
+      "floor": "1 piano",
+      "title": "Bilocale via Dei Tigli 2, Millepini, Rodano",
+      "posted_date": "2026-02-25",
+      "detail_fetched": "2026-03-20",
+      "latitude": 45.4676,
+      "longitude": 9.33693,
+      "address": "VIA DEI TIGLI",
+      "location": "Millepini",
+      "city": "Rodano"
+    },
+    {
+      "id": "120768496",
+      "type": "Villa bifamiliare",
+      "price": 359000,
+      "size_m2": 190.0,
+      "eur_per_m2": 1889,
+      "url": "https://www.immobiliare.it/annunci/120768496/",
+      "first_seen": "2026-03-14",
+      "rooms": "4",
+      "bathrooms": "3",
+      "condition": "Buono / Abitabile",
+      "energy_class": "B",
+      "floor": "1",
+      "title": "Villa bifamiliare via dell'Ontano 18, Millepini, Rodano",
+      "posted_date": "2025-05-22",
+      "detail_fetched": "2026-03-20",
+      "latitude": 45.4688,
+      "longitude": 9.3391,
+      "address": "Via dell'Ontano",
+      "location": "Millepini",
+      "city": "Rodano"
+    },
+    {
+      "id": "127187915",
+      "type": "Appartamento",
+      "price": 115000,
+      "size_m2": 55.0,
+      "eur_per_m2": 2091,
+      "url": "https://www.immobiliare.it/annunci/127187915/",
+      "first_seen": "2026-03-14",
+      "rooms": "1",
+      "bathrooms": "1",
+      "condition": "Ottimo / Ristrutturato",
+      "energy_class": "C",
+      "floor": "2 piano",
+      "title": "Monolocale via Milano 5, Pobbiano, Rodano",
+      "posted_date": "2026-03-03",
+      "detail_fetched": "2026-03-20",
+      "latitude": 45.4832,
+      "longitude": 9.3425,
+      "address": "Via Milano",
+      "location": "Pobbiano",
+      "city": "Rodano"
+    },
+    {
+      "id": "126926993",
+      "type": "Appartamento",
+      "price": 380000,
+      "size_m2": 123.7,
+      "eur_per_m2": 3072,
+      "url": "https://www.immobiliare.it/annunci/126926993/",
+      "first_seen": "2026-03-14",
+      "rooms": "3",
+      "bathrooms": "2",
+      "condition": "Ottimo / Ristrutturato",
+      "energy_class": "A1",
+      "floor": "piano terra",
+      "title": "Trilocale via Giuseppe Giusti 28, Rodano",
+      "posted_date": "2026-02-19",
+      "detail_fetched": "2026-03-20",
+      "latitude": 45.4711,
+      "longitude": 9.3535,
+      "address": "Via Giuseppe Giusti",
+      "location": null,
+      "city": "Rodano"
+    },
+    {
+      "id": "126786619",
+      "type": "Villa a schiera",
+      "price": 310000,
+      "size_m2": 132.0,
+      "eur_per_m2": 2348,
+      "url": "https://www.immobiliare.it/annunci/126786619/",
+      "first_seen": "2026-03-14",
+      "rooms": "3",
+      "bathrooms": "2",
+      "condition": "Buono / Abitabile",
+      "energy_class": "F",
+      "floor": "interrato (-1), piano rialzato",
+      "title": "Villa a schiera via dell'Ontano 5, Millepini, Rodano",
+      "posted_date": "2026-02-16",
+      "detail_fetched": "2026-03-20",
+      "latitude": 45.469,
+      "longitude": 9.3392,
+      "address": "Via dell'Ontano",
+      "location": "Millepini",
+      "city": "Rodano"
+    },
+    {
+      "id": "126926703",
+      "type": "Appartamento",
+      "price": 320000,
+      "size_m2": 110.0,
+      "eur_per_m2": 2909,
+      "url": "https://www.immobiliare.it/annunci/126926703/",
+      "first_seen": "2026-03-14",
+      "rooms": "3",
+      "bathrooms": "2",
+      "condition": "Ottimo / Ristrutturato",
+      "energy_class": "A1",
+      "floor": "piano terra",
+      "title": "Trilocale via Giuseppe Giusti 28, Rodano",
+      "posted_date": "2026-02-20",
+      "detail_fetched": "2026-03-20",
+      "latitude": 45.4711,
+      "longitude": 9.3535,
+      "address": "Via Giuseppe Giusti",
+      "location": null,
+      "city": "Rodano"
+    },
+    {
+      "id": "107038817",
+      "type": "Appartamento",
+      "price": 145000,
+      "size_m2": 110.0,
+      "eur_per_m2": 1318,
+      "url": "https://www.immobiliare.it/annunci/107038817/",
+      "first_seen": "2026-03-14",
+      "rooms": "3",
+      "bathrooms": "1",
+      "condition": "Buono / Abitabile",
+      "energy_class": null,
+      "floor": "3",
+      "title": "Trilocale via dei Tigli, Millepini, Rodano",
+      "posted_date": "2023-10-29",
+      "detail_fetched": "2026-03-20",
+      "latitude": 45.4667,
+      "longitude": 9.3375,
+      "address": "Via dei Tigli",
+      "location": "Millepini",
+      "city": "Rodano"
+    },
+    {
+      "id": "117873285",
+      "type": "Appartamento",
+      "price": 100000,
+      "size_m2": 66.0,
+      "eur_per_m2": 1515,
+      "url": "https://www.immobiliare.it/annunci/117873285/",
+      "first_seen": "2026-03-14",
+      "rooms": "2",
+      "bathrooms": "1",
+      "condition": "Ottimo / Ristrutturato",
+      "energy_class": null,
+      "floor": "2 piano",
+      "title": "Bilocale via Interna 7, Pobbiano, Rodano",
+      "posted_date": "2025-01-29",
+      "detail_fetched": "2026-03-20",
+      "latitude": 45.4824,
+      "longitude": 9.34184,
+      "address": "Via Interna 7",
+      "location": "Pobbiano",
+      "city": "Rodano"
+    },
+    {
+      "id": "110184959",
+      "type": "Appartamento",
+      "price": 180000,
+      "size_m2": 126.0,
+      "eur_per_m2": 1429,
+      "url": "https://www.immobiliare.it/annunci/110184959/",
+      "first_seen": "2026-03-14",
+      "rooms": "4",
+      "bathrooms": "2",
+      "condition": null,
+      "energy_class": "C",
+      "floor": "1",
+      "title": "Quadrilocale via Alcide De Gasperi 6, Lucino Rodano, Rodano",
+      "posted_date": "2024-03-15",
+      "detail_fetched": "2026-03-20",
+      "latitude": null,
+      "longitude": null,
+      "address": null,
+      "location": null,
+      "city": null
+    },
+    {
+      "id": "125741483",
+      "type": "Appartamento",
+      "price": 107000,
+      "size_m2": 62.0,
+      "eur_per_m2": 1726,
+      "url": "https://www.immobiliare.it/annunci/125741483/",
+      "first_seen": "2026-03-15",
+      "rooms": "2",
+      "bathrooms": "1",
+      "condition": "Buono / Abitabile",
+      "energy_class": "F",
+      "floor": "3",
+      "title": "Bilocale via dei Tigli 2, Millepini, Rodano",
+      "posted_date": "2025-11-27",
+      "detail_fetched": "2026-03-20",
+      "latitude": null,
+      "longitude": null,
+      "address": null,
+      "location": null,
+      "city": null
+    },
+    {
+      "id": "126142599",
+      "type": "Appartamento",
+      "price": 110000,
+      "size_m2": 60.0,
+      "eur_per_m2": 1833,
+      "url": "https://www.immobiliare.it/annunci/126142599/",
+      "first_seen": "2026-03-14",
+      "rooms": "2",
+      "bathrooms": "1",
+      "condition": "Ottimo / Ristrutturato",
+      "energy_class": "D",
+      "floor": "2",
+      "title": "Bilocale via Milano, Rodano",
+      "posted_date": "2026-01-22",
+      "detail_fetched": "2026-03-20",
+      "latitude": null,
+      "longitude": null,
+      "address": null,
+      "location": null,
+      "city": null
+    },
+    {
+      "id": "121999584",
+      "type": "Appartamento",
+      "price": 230000,
+      "size_m2": 126.0,
+      "eur_per_m2": 1825,
+      "url": "https://www.immobiliare.it/annunci/121999584/",
+      "first_seen": "2026-03-15",
+      "rooms": "4",
+      "bathrooms": "3",
+      "condition": "Buono / Abitabile",
+      "energy_class": null,
+      "floor": "3 piano",
+      "title": "Quadrilocale via del Tigli 3, Millepini, Rodano",
+      "posted_date": "2025-07-14",
+      "detail_fetched": "2026-03-20",
+      "latitude": null,
+      "longitude": null,
+      "address": null,
+      "location": null,
+      "city": null
+    },
+    {
+      "id": "121569554",
+      "type": "Villa a schiera",
+      "price": 359000,
+      "size_m2": 120.0,
+      "eur_per_m2": 2992,
+      "url": "https://www.immobiliare.it/annunci/121569554/",
+      "first_seen": "2026-03-15",
+      "rooms": "4",
+      "bathrooms": "2",
+      "condition": "Ottimo / Ristrutturato",
+      "energy_class": "G",
+      "floor": "piano terra",
+      "title": "Villa a schiera via Prato 5, Lucino Rodano, Rodano",
+      "posted_date": "2025-06-24",
+      "detail_fetched": "2026-03-20",
+      "latitude": null,
+      "longitude": null,
+      "address": null,
+      "location": null,
+      "city": null
+    },
+    {
+      "id": "127007123",
+      "type": "Appartamento",
+      "price": 179000,
+      "size_m2": 92.0,
+      "eur_per_m2": 1946,
+      "url": "https://www.immobiliare.it/annunci/127007123/",
+      "first_seen": "2026-03-15",
+      "rooms": "3",
+      "bathrooms": "1",
+      "condition": "Da ristrutturare",
+      "energy_class": "F",
+      "floor": "1",
+      "title": "Trilocale via Alessandro Manzoni 7, Lucino Rodano, Rodano",
+      "posted_date": "2026-02-24",
+      "detail_fetched": "2026-03-20",
+      "latitude": null,
+      "longitude": null,
+      "address": null,
+      "location": null,
+      "city": null
+    },
+    {
+      "id": "127005751",
+      "type": "Appartamento",
+      "price": 350000,
+      "size_m2": 127.0,
+      "eur_per_m2": 2756,
+      "url": "https://www.immobiliare.it/annunci/127005751/",
+      "first_seen": "2026-03-15",
+      "rooms": "3",
+      "bathrooms": "2",
+      "condition": "Ottimo / Ristrutturato",
+      "energy_class": "A3",
+      "floor": "piano terra",
+      "title": "Trilocale via Garibaldi 6, Lucino Rodano, Rodano",
+      "posted_date": "2026-02-24",
+      "detail_fetched": "2026-03-20",
+      "latitude": null,
+      "longitude": null,
+      "address": null,
+      "location": null,
+      "city": null
+    },
+    {
+      "id": "117087587",
+      "type": "Appartamento",
+      "price": 325000,
+      "size_m2": 128.0,
+      "eur_per_m2": 2539,
+      "url": "https://www.immobiliare.it/annunci/117087587/",
+      "first_seen": "2026-03-15",
+      "rooms": "3",
+      "bathrooms": "2",
+      "condition": "Ottimo / Ristrutturato",
+      "energy_class": "D",
+      "floor": "piano terra",
+      "title": "Trilocale via Giuseppe Garibaldi 3, Lucino Rodano, Rodano",
+      "posted_date": "2024-12-19",
+      "detail_fetched": "2026-03-20",
+      "latitude": null,
+      "longitude": null,
+      "address": null,
+      "location": null,
+      "city": null
+    },
+    {
+      "id": "116161357",
+      "type": "Villa a schiera",
+      "price": 299000,
+      "size_m2": 143.0,
+      "eur_per_m2": 2091,
+      "url": "https://www.immobiliare.it/annunci/116161357/",
+      "first_seen": "2026-03-15",
+      "rooms": "4",
+      "bathrooms": "2",
+      "condition": "Buono / Abitabile",
+      "energy_class": "G",
+      "floor": "interrato (-1), piano terra, 1",
+      "title": "Villa a schiera 4 locali, buono stato, Millepini, Rodano",
+      "posted_date": "2024-11-15",
+      "detail_fetched": "2026-03-20",
+      "latitude": null,
+      "longitude": null,
+      "address": null,
+      "location": null,
+      "city": null
+    },
+    {
+      "id": "122123102",
+      "type": "Villa unifamiliare",
+      "price": 730000,
+      "size_m2": 291.0,
+      "eur_per_m2": 2509,
+      "url": "https://www.immobiliare.it/annunci/122123102/",
+      "first_seen": "2026-03-15",
+      "rooms": "5+",
+      "bathrooms": "3+",
+      "condition": "Ottimo / Ristrutturato",
+      "energy_class": "E",
+      "floor": "piano terra",
+      "title": "Villa unifamiliare via Fonte 7, Lucino Rodano, Rodano",
+      "posted_date": "2025-07-18",
+      "detail_fetched": "2026-03-20",
+      "latitude": null,
+      "longitude": null,
+      "address": null,
+      "location": null,
+      "city": null
+    },
+    {
+      "id": "124072887",
+      "type": "Appartamento",
+      "price": 180000,
+      "size_m2": 126.0,
+      "eur_per_m2": 1429,
+      "url": "https://www.immobiliare.it/annunci/124072887/",
+      "first_seen": "2026-03-15",
+      "rooms": "4",
+      "bathrooms": "2",
+      "condition": "Buono / Abitabile",
+      "energy_class": "C",
+      "floor": "1",
+      "title": "Quadrilocale via Alcide De Gasperi, Lucino Rodano, Rodano",
+      "posted_date": "2025-10-23",
+      "detail_fetched": "2026-03-20",
+      "latitude": null,
+      "longitude": null,
+      "address": null,
+      "location": null,
+      "city": null
+    },
+    {
+      "id": "83327223",
+      "type": "Appartamento",
+      "price": 355000,
+      "size_m2": 149.0,
+      "eur_per_m2": 2383,
+      "url": "https://www.immobiliare.it/annunci/83327223/",
+      "first_seen": "2026-03-15",
+      "rooms": "4",
+      "bathrooms": "2",
+      "condition": "Nuovo / In costruzione",
+      "energy_class": "A1",
+      "floor": "1 piano",
+      "title": "Quadrilocale via Giuseppe Garibaldi, Lucino Rodano, Rodano",
+      "posted_date": "2020-10-15",
+      "detail_fetched": "2026-03-20",
+      "latitude": null,
+      "longitude": null,
+      "address": null,
+      "location": null,
+      "city": null
+    },
+    {
+      "id": "81854212",
+      "type": "Appartamento",
+      "price": 360000,
+      "size_m2": 154.0,
+      "eur_per_m2": 2338,
+      "url": "https://www.immobiliare.it/annunci/81854212/",
+      "first_seen": "2026-03-15",
+      "rooms": "3",
+      "bathrooms": "2",
+      "condition": "Nuovo / In costruzione",
+      "energy_class": "A2",
+      "floor": "piano terra",
+      "title": "Trilocale via Giuseppe Garibaldi, Lucino Rodano, Rodano",
+      "posted_date": "2020-07-26",
+      "detail_fetched": "2026-03-20",
+      "latitude": null,
+      "longitude": null,
+      "address": null,
+      "location": null,
+      "city": null
+    },
+    {
+      "id": "127343309",
+      "type": "Appartamento",
+      "price": 280000,
+      "size_m2": 134.0,
+      "eur_per_m2": 2090,
+      "url": "https://www.immobiliare.it/annunci/127343309/",
+      "first_seen": "2026-03-15",
+      "rooms": "4",
+      "bathrooms": "2",
+      "condition": "Ottimo / Ristrutturato",
+      "energy_class": null,
+      "floor": "piano terra",
+      "title": "Quadrilocale via Dei Tigli 3, Millepini, Rodano",
+      "posted_date": "2026-03-09",
+      "detail_fetched": "2026-03-20",
+      "latitude": null,
+      "longitude": null,
+      "address": null,
+      "location": null,
+      "city": null
+    },
+    {
+      "id": "127187395",
+      "type": "Appartamento",
+      "price": 175000,
+      "size_m2": 85.0,
+      "eur_per_m2": 2059,
+      "url": "https://www.immobiliare.it/annunci/127187395/",
+      "first_seen": "2026-03-15",
+      "rooms": "3",
+      "bathrooms": "1",
+      "condition": "Buono / Abitabile",
+      "energy_class": null,
+      "floor": "piano rialzato",
+      "title": "Trilocale via Dei Tigli 2, Millepini, Rodano",
+      "posted_date": "2026-03-03",
+      "detail_fetched": "2026-03-20",
+      "latitude": null,
+      "longitude": null,
+      "address": null,
+      "location": null,
+      "city": null
+    },
+    {
+      "id": "120377758",
+      "type": "Villa a schiera",
+      "price": 295000,
+      "size_m2": 110.0,
+      "eur_per_m2": 2682,
+      "url": "https://www.immobiliare.it/annunci/120377758/",
+      "first_seen": "2026-03-15",
+      "rooms": "3",
+      "bathrooms": "1",
+      "condition": "Ottimo / Ristrutturato",
+      "energy_class": null,
+      "floor": "piano terra, 1",
+      "title": "Villa a schiera via delle Querce, Millepini, Rodano",
+      "posted_date": "2025-05-07",
+      "detail_fetched": "2026-03-20",
+      "latitude": null,
+      "longitude": null,
+      "address": null,
+      "location": null,
+      "city": null
+    },
+    {
+      "id": "92557418",
+      "type": "Appartamento",
+      "price": 180000,
+      "size_m2": 130.0,
+      "eur_per_m2": 1385,
+      "url": "https://www.immobiliare.it/annunci/92557418/",
+      "first_seen": "2026-03-15",
+      "rooms": "4",
+      "bathrooms": "2",
+      "condition": "Buono / Abitabile",
+      "energy_class": "C",
+      "floor": "1",
+      "title": "Quadrilocale buono stato, primo piano, Lucino Rodano, Rodano",
+      "posted_date": "2021-12-10",
+      "detail_fetched": "2026-03-20",
+      "latitude": null,
+      "longitude": null,
+      "address": null,
+      "location": null,
+      "city": null
+    },
+    {
+      "id": "126016625",
+      "type": "Appartamento",
+      "price": 265000,
+      "size_m2": 149.0,
+      "eur_per_m2": 1779,
+      "url": "https://www.immobiliare.it/annunci/126016625/",
+      "first_seen": "2026-03-15",
+      "rooms": "4",
+      "bathrooms": "2",
+      "condition": "Buono / Abitabile",
+      "energy_class": null,
+      "floor": "piano rialzato",
+      "title": "Quadrilocale via Dei Tigli 12, Millepini, Rodano",
+      "posted_date": "2026-01-19",
+      "detail_fetched": "2026-03-20",
+      "latitude": null,
+      "longitude": null,
+      "address": null,
+      "location": null,
+      "city": null
+    },
+    {
+      "id": "126320149",
+      "type": "Appartamento",
+      "price": 189000,
+      "size_m2": 80.0,
+      "eur_per_m2": 2362,
+      "url": "https://www.immobiliare.it/annunci/126320149/",
+      "first_seen": "2026-03-15",
+      "rooms": "3",
+      "bathrooms": "2",
+      "condition": "Buono / Abitabile",
+      "energy_class": "E",
+      "floor": "2 piano",
+      "title": "Trilocale via delle Querce 1/C, Millepini, Rodano",
+      "posted_date": "2023-09-30",
+      "detail_fetched": "2026-03-20",
+      "latitude": null,
+      "longitude": null,
+      "address": null,
+      "location": null,
+      "city": null
+    },
+    {
+      "id": "127470660",
+      "type": "Appartamento",
+      "price": 250000,
+      "size_m2": 101.0,
+      "eur_per_m2": 2475,
+      "url": "https://www.immobiliare.it/annunci/127470660/",
+      "first_seen": "2026-03-15",
+      "rooms": "3",
+      "bathrooms": "2",
+      "condition": "Buono / Abitabile",
+      "energy_class": "E",
+      "floor": "piano terra",
+      "title": "Trilocale via Civasco 7, Rodano",
+      "posted_date": "2026-03-13",
+      "detail_fetched": "2026-03-20",
+      "latitude": null,
+      "longitude": null,
+      "address": null,
+      "location": null,
+      "city": null
+    },
+    {
+      "id": "125523523",
+      "type": "Appartamento",
+      "price": 220000,
+      "size_m2": 137.0,
+      "eur_per_m2": 1606,
+      "url": "https://www.immobiliare.it/annunci/125523523/",
+      "first_seen": "2026-03-15",
+      "rooms": "3",
+      "bathrooms": "2",
+      "condition": "Buono / Abitabile",
+      "energy_class": null,
+      "floor": "1 piano",
+      "title": "Trilocale via Dei Tigli 8, Rodano",
+      "posted_date": "2025-12-22",
+      "detail_fetched": "2026-03-20",
+      "latitude": null,
+      "longitude": null,
+      "address": null,
+      "location": null,
+      "city": null
+    },
+    {
+      "id": "106175465",
+      "type": "Appartamento",
+      "price": 180000,
+      "size_m2": 130.0,
+      "eur_per_m2": 1385,
+      "url": "https://www.immobiliare.it/annunci/106175465/",
+      "first_seen": "2026-03-15",
+      "rooms": "4",
+      "bathrooms": "2",
+      "condition": "Ottimo / Ristrutturato",
+      "energy_class": "C",
+      "floor": "1",
+      "title": "Quadrilocale via Alcide De Gasperi 6/d, Lucino Rodano, Rodano",
+      "posted_date": "2023-09-25",
+      "detail_fetched": "2026-03-20",
+      "latitude": null,
+      "longitude": null,
+      "address": null,
+      "location": null,
+      "city": null
+    },
+    {
+      "id": "127126687",
+      "type": "Appartamento",
+      "price": 310000,
+      "size_m2": 130.0,
+      "eur_per_m2": 2385,
+      "url": "https://www.immobiliare.it/annunci/127126687/",
+      "first_seen": "2026-03-15",
+      "rooms": "5",
+      "bathrooms": "2",
+      "condition": "Ottimo / Ristrutturato",
+      "energy_class": "E",
+      "floor": "2",
+      "title": "Appartamento via Venezia 14, Millepini, Rodano",
+      "posted_date": "2026-02-28",
+      "detail_fetched": "2026-03-20",
+      "latitude": null,
+      "longitude": null,
+      "address": null,
+      "location": null,
+      "city": null
+    },
+    {
+      "id": "90505655",
+      "type": "Appartamento",
+      "price": 100000,
+      "size_m2": 6.5,
+      "eur_per_m2": 15385,
+      "url": "https://www.immobiliare.it/annunci/90505655/",
+      "first_seen": "2026-03-20",
+      "rooms": "2",
+      "bathrooms": "1",
+      "condition": "Ottimo / Ristrutturato",
+      "energy_class": "G",
+      "floor": "2 piano",
+      "title": "Bilocale via dei Tigli 2, Millepini, Rodano",
+      "posted_date": "2021-09-09",
+      "detail_fetched": "2026-03-20",
+      "latitude": null,
+      "longitude": null,
+      "address": null,
+      "location": null,
+      "city": null
+    }
+  ],
+  "market_index": {
+    "latest_label": "2026-02-01",
+    "latest_value": 2293.0,
+    "history": [
+      [
+        "2017-11-01",
+        1828.0
+      ],
+      [
+        "2017-12-01",
+        1798.0
+      ],
+      [
+        "2018-01-01",
+        1802.0
+      ],
+      [
+        "2018-02-01",
+        1800.0
+      ],
+      [
+        "2018-03-01",
+        1829.0
+      ],
+      [
+        "2018-04-01",
+        1815.0
+      ],
+      [
+        "2018-05-01",
+        1813.0
+      ],
+      [
+        "2018-06-01",
+        1799.0
+      ],
+      [
+        "2018-07-01",
+        1817.0
+      ],
+      [
+        "2018-08-01",
+        1814.0
+      ],
+      [
+        "2018-09-01",
+        1806.0
+      ],
+      [
+        "2018-10-01",
+        1778.0
+      ],
+      [
+        "2018-11-01",
+        1746.0
+      ],
+      [
+        "2018-12-01",
+        1753.0
+      ],
+      [
+        "2019-01-01",
+        1768.0
+      ],
+      [
+        "2019-02-01",
+        1769.0
+      ],
+      [
+        "2019-03-01",
+        1739.0
+      ],
+      [
+        "2019-04-01",
+        1771.0
+      ],
+      [
+        "2019-05-01",
+        1819.0
+      ],
+      [
+        "2019-06-01",
+        1802.0
+      ],
+      [
+        "2019-07-01",
+        1825.0
+      ],
+      [
+        "2019-08-01",
+        1824.0
+      ],
+      [
+        "2019-09-01",
+        1850.0
+      ],
+      [
+        "2019-10-01",
+        1856.0
+      ],
+      [
+        "2019-11-01",
+        1859.0
+      ],
+      [
+        "2019-12-01",
+        1881.0
+      ],
+      [
+        "2020-01-01",
+        1829.0
+      ],
+      [
+        "2020-02-01",
+        1871.0
+      ],
+      [
+        "2020-03-01",
+        1892.0
+      ],
+      [
+        "2020-04-01",
+        1916.0
+      ],
+      [
+        "2020-05-01",
+        1883.0
+      ],
+      [
+        "2020-06-01",
+        1860.0
+      ],
+      [
+        "2020-07-01",
+        1945.0
+      ],
+      [
+        "2020-08-01",
+        1976.0
+      ],
+      [
+        "2020-09-01",
+        1951.0
+      ],
+      [
+        "2020-10-01",
+        1955.0
+      ],
+      [
+        "2020-11-01",
+        1971.0
+      ],
+      [
+        "2020-12-01",
+        1990.0
+      ],
+      [
+        "2021-01-01",
+        2021.0
+      ],
+      [
+        "2021-02-01",
+        1993.0
+      ],
+      [
+        "2021-03-01",
+        2031.0
+      ],
+      [
+        "2021-04-01",
+        2033.0
+      ],
+      [
+        "2021-05-01",
+        2052.0
+      ],
+      [
+        "2021-06-01",
+        2090.0
+      ],
+      [
+        "2021-07-01",
+        2093.0
+      ],
+      [
+        "2021-08-01",
+        2110.0
+      ],
+      [
+        "2021-09-01",
+        2111.0
+      ],
+      [
+        "2021-10-01",
+        2073.0
+      ],
+      [
+        "2021-11-01",
+        2052.0
+      ],
+      [
+        "2021-12-01",
+        2068.0
+      ],
+      [
+        "2022-01-01",
+        2113.0
+      ],
+      [
+        "2022-02-01",
+        2093.0
+      ],
+      [
+        "2022-03-01",
+        2102.0
+      ],
+      [
+        "2022-04-01",
+        2086.0
+      ],
+      [
+        "2022-05-01",
+        2069.0
+      ],
+      [
+        "2022-06-01",
+        2096.0
+      ],
+      [
+        "2022-07-01",
+        2054.0
+      ],
+      [
+        "2022-08-01",
+        2091.0
+      ],
+      [
+        "2022-09-01",
+        2110.0
+      ],
+      [
+        "2022-10-01",
+        2135.0
+      ],
+      [
+        "2022-11-01",
+        2161.0
+      ],
+      [
+        "2022-12-01",
+        2163.0
+      ],
+      [
+        "2023-01-01",
+        2166.0
+      ],
+      [
+        "2023-02-01",
+        2157.0
+      ],
+      [
+        "2023-03-01",
+        2129.0
+      ],
+      [
+        "2023-04-01",
+        2163.0
+      ],
+      [
+        "2023-05-01",
+        2139.0
+      ],
+      [
+        "2023-06-01",
+        2147.0
+      ],
+      [
+        "2023-07-01",
+        2139.0
+      ],
+      [
+        "2023-08-01",
+        2124.0
+      ],
+      [
+        "2023-09-01",
+        2099.0
+      ],
+      [
+        "2023-10-01",
+        2059.0
+      ],
+      [
+        "2023-11-01",
+        2083.0
+      ],
+      [
+        "2023-12-01",
+        2021.0
+      ],
+      [
+        "2024-01-01",
+        2041.0
+      ],
+      [
+        "2024-02-01",
+        2063.0
+      ],
+      [
+        "2024-03-01",
+        2246.0
+      ],
+      [
+        "2024-04-01",
+        2216.0
+      ],
+      [
+        "2024-05-01",
+        2213.0
+      ],
+      [
+        "2024-06-01",
+        2215.0
+      ],
+      [
+        "2024-07-01",
+        2227.0
+      ],
+      [
+        "2024-08-01",
+        2244.0
+      ],
+      [
+        "2024-09-01",
+        2254.0
+      ],
+      [
+        "2024-10-01",
+        2273.0
+      ],
+      [
+        "2024-11-01",
+        2239.0
+      ],
+      [
+        "2024-12-01",
+        2254.0
+      ],
+      [
+        "2025-01-01",
+        2277.0
+      ],
+      [
+        "2025-02-01",
+        2284.0
+      ],
+      [
+        "2025-03-01",
+        2211.0
+      ],
+      [
+        "2025-04-01",
+        2219.0
+      ],
+      [
+        "2025-05-01",
+        2219.0
+      ],
+      [
+        "2025-06-01",
+        2239.0
+      ],
+      [
+        "2025-07-01",
+        2251.0
+      ],
+      [
+        "2025-08-01",
+        2258.0
+      ],
+      [
+        "2025-09-01",
+        2295.0
+      ],
+      [
+        "2025-10-01",
+        2320.0
+      ],
+      [
+        "2025-11-01",
+        2332.0
+      ],
+      [
+        "2025-12-01",
+        2271.0
+      ],
+      [
+        "2026-01-01",
+        2242.0
+      ],
+      [
+        "2026-02-01",
+        2293.0
+      ]
+    ]
+  },
+  "markers_count": 49
+}

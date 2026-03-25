@@ -1,0 +1,52 @@
+name: Fetch Rodano Listings
+
+on:
+  schedule:
+    # Run every day at 07:00 and 17:00 UTC (9:00 and 19:00 CEST)
+    - cron: '0 7 * * *'
+    - cron: '0 17 * * *'
+  workflow_dispatch:  # Allow manual trigger from GitHub UI
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # needed to commit and push snapshots back to the repo
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # full history so snapshot diffs work correctly
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Configure git identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Run fetch_listings.py
+        env:
+          # Store these values as GitHub repository secrets:
+          #   Settings → Secrets and variables → Actions → New repository secret
+          #   DATADOME_COOKIE  — value of the 'datadome' cookie from immobiliare.it
+          #   BROWSER_COOKIES  — full Cookie header string from DevTools (optional,
+          #                      improves search-page fetching; same session as above)
+          DATADOME_COOKIE: ${{ secrets.DATADOME_COOKIE }}
+          BROWSER_COOKIES: ${{ secrets.BROWSER_COOKIES }}
+          CI: "true"   # tells the script to skip its internal git push
+        run: python fetch_listings.py
+
+      - name: Commit and push new snapshot + map
+        run: |
+          git add listings_history/ map_listings.html
+          # Only commit if there are staged changes
+          git diff --cached --quiet || git commit -m "Auto-update listings snapshot - $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push origin main

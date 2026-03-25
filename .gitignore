@@ -1,12 +1,28 @@
-# Keep ONLY map_listings.html and Rodano_Terracielo_Valuation_Report_v3.html on GitHub
-# Everything else stays local
-
-# Ignore everything
+# Ignore everything by default, then whitelist what should be on GitHub
 /*
 
-# But keep these files/folders
+# Git internals
 !.git
 !.gitignore
+
+# GitHub Actions workflow
+!.github/
+.github/*
+!.github/workflows/
+!.github/workflows/*.yml
+
+# Python script and dependencies
+!fetch_listings.py
+!requirements.txt
+
+# Snapshot history (JSON data files)
+!listings_history/
+listings_history/*
+!listings_history/*.json
+
+# HTML outputs
 !map_listings.html
 !Rodano_Terracielo_Valuation_Report_v3.html
+
+# Docs
 !README.md
