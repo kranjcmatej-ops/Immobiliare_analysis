@@ -6,11 +6,22 @@ on:
     - cron: '53 16 * * *'
   workflow_dispatch:  # Allow manual trigger from GitHub UI
 
+# Prevent overlapping Pages deployments if both workflows run close together
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 jobs:
   fetch:
     runs-on: ubuntu-latest
     permissions:
       contents: write   # needed to commit and push snapshots back to the repo
+      pages: write      # needed to deploy to GitHub Pages
+      id-token: write   # needed for OIDC token (deploy-pages)
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout repository
@@ -49,3 +60,23 @@ jobs:
           # Only commit if there are staged changes
           git diff --cached --quiet || git commit -m "Auto-update peschiera listings snapshot - $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push origin main
+
+      - name: Prepare Pages artifact
+        run: |
+          mkdir -p _site
+          # Include both maps so the full site is always up to date
+          cp map_listings.html _site/ 2>/dev/null || true
+          cp peschiera_map.html _site/ 2>/dev/null || true
+          cp Rodano_Terracielo_Valuation_Report_v3.html _site/ 2>/dev/null || true
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '_site'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
