@@ -1,0 +1,888 @@
+{
+  "snapshot_time": "2026-03-26T19:07:45",
+  "capture_date": "2026-03-15",
+  "listings": [
+    {
+      "id": "126417271",
+      "type": "Appartamento",
+      "price": 360000,
+      "size_m2": null,
+      "eur_per_m2": null,
+      "url": "https://www.immobiliare.it/annunci/126417271/",
+      "first_seen": "2026-03-26",
+      "rooms": null,
+      "bathrooms": null,
+      "condition": null,
+      "energy_class": null,
+      "floor": null,
+      "title": null,
+      "posted_date": null,
+      "latitude": null,
+      "longitude": null,
+      "detail_fetched": null
+    },
+    {
+      "id": "123938287",
+      "type": "Appartamento",
+      "price": 565000,
+      "size_m2": 195.0,
+      "eur_per_m2": 2897,
+      "url": "https://www.immobiliare.it/annunci/123938287/",
+      "first_seen": "2026-03-20",
+      "rooms": "5+",
+      "bathrooms": "3",
+      "condition": "Buono / Abitabile",
+      "energy_class": "E",
+      "floor": "1 piano",
+      "title": "Appartamento via Veneto 9, San Bovio San Felice, Peschiera Borromeo",
+      "posted_date": "2025-10-17",
+      "latitude": 45.4608,
+      "longitude": 9.31623,
+      "detail_fetched": "2026-03-20"
+    },
+    {
+      "id": "126226951",
+      "type": "Appartamento",
+      "price": 199000,
+      "size_m2": null,
+      "eur_per_m2": null,
+      "url": "https://www.immobiliare.it/annunci/126226951/",
+      "first_seen": "2026-03-26",
+      "rooms": null,
+      "bathrooms": null,
+      "condition": null,
+      "energy_class": null,
+      "floor": null,
+      "title": null,
+      "posted_date": null,
+      "latitude": null,
+      "longitude": null,
+      "detail_fetched": null
+    },
+    {
+      "id": "125028755",
+      "type": "Appartamento",
+      "price": 199000,
+      "size_m2": null,
+      "eur_per_m2": null,
+      "url": "https://www.immobiliare.it/annunci/125028755/",
+      "first_seen": "2026-03-26",
+      "rooms": null,
+      "bathrooms": null,
+      "condition": null,
+      "energy_class": null,
+      "floor": null,
+      "title": null,
+      "posted_date": null,
+      "latitude": null,
+      "longitude": null,
+      "detail_fetched": null
+    },
+    {
+      "id": "126860785",
+      "type": "Appartamento",
+      "price": 165000,
+      "size_m2": null,
+      "eur_per_m2": null,
+      "url": "https://www.immobiliare.it/annunci/126860785/",
+      "first_seen": "2026-03-26",
+      "rooms": null,
+      "bathrooms": null,
+      "condition": null,
+      "energy_class": null,
+      "floor": null,
+      "title": null,
+      "posted_date": null,
+      "latitude": null,
+      "longitude": null,
+      "detail_fetched": null
+    },
+    {
+      "id": "126452553",
+      "type": "Appartamento",
+      "price": 255000,
+      "size_m2": null,
+      "eur_per_m2": null,
+      "url": "https://www.immobiliare.it/annunci/126452553/",
+      "first_seen": "2026-03-26",
+      "rooms": null,
+      "bathrooms": null,
+      "condition": null,
+      "energy_class": null,
+      "floor": null,
+      "title": null,
+      "posted_date": null,
+      "latitude": null,
+      "longitude": null,
+      "detail_fetched": null
+    },
+    {
+      "id": "124311581",
+      "type": "Appartamento",
+      "price": 199000,
+      "size_m2": null,
+      "eur_per_m2": null,
+      "url": "https://www.immobiliare.it/annunci/124311581/",
+      "first_seen": "2026-03-26",
+      "rooms": null,
+      "bathrooms": null,
+      "condition": null,
+      "energy_class": null,
+      "floor": null,
+      "title": null,
+      "posted_date": null,
+      "latitude": null,
+      "longitude": null,
+      "detail_fetched": null
+    },
+    {
+      "id": "113219009",
+      "type": "Appartamento",
+      "price": 355000,
+      "size_m2": null,
+      "eur_per_m2": null,
+      "url": "https://www.immobiliare.it/annunci/113219009/",
+      "first_seen": "2026-03-26",
+      "rooms": null,
+      "bathrooms": null,
+      "condition": null,
+      "energy_class": null,
+      "floor": null,
+      "title": null,
+      "posted_date": null,
+      "latitude": null,
+      "longitude": null,
+      "detail_fetched": null
+    },
+    {
+      "id": "126987563",
+      "type": "Attico - Mansarda",
+      "price": 319000,
+      "size_m2": null,
+      "eur_per_m2": null,
+      "url": "https://www.immobiliare.it/annunci/126987563/",
+      "first_seen": "2026-03-26",
+      "rooms": null,
+      "bathrooms": null,
+      "condition": null,
+      "energy_class": null,
+      "floor": null,
+      "title": null,
+      "posted_date": null,
+      "latitude": null,
+      "longitude": null,
+      "detail_fetched": null
+    },
+    {
+      "id": "124372745",
+      "type": "Appartamento",
+      "price": 298000,
+      "size_m2": null,
+      "eur_per_m2": null,
+      "url": "https://www.immobiliare.it/annunci/124372745/",
+      "first_seen": "2026-03-26",
+      "rooms": null,
+      "bathrooms": null,
+      "condition": null,
+      "energy_class": null,
+      "floor": null,
+      "title": null,
+      "posted_date": null,
+      "latitude": null,
+      "longitude": null,
+      "detail_fetched": null
+    },
+    {
+      "id": "126417579",
+      "type": "Appartamento",
+      "price": 230000,
+      "size_m2": null,
+      "eur_per_m2": null,
+      "url": "https://www.immobiliare.it/annunci/126417579/",
+      "first_seen": "2026-03-26",
+      "rooms": null,
+      "bathrooms": null,
+      "condition": null,
+      "energy_class": null,
+      "floor": null,
+      "title": null,
+      "posted_date": null,
+      "latitude": null,
+      "longitude": null,
+      "detail_fetched": null
+    },
+    {
+      "id": "126996991",
+      "type": "Appartamento",
+      "price": 480000,
+      "size_m2": null,
+      "eur_per_m2": null,
+      "url": "https://www.immobiliare.it/annunci/126996991/",
+      "first_seen": "2026-03-26",
+      "rooms": null,
+      "bathrooms": null,
+      "condition": null,
+      "energy_class": null,
+      "floor": null,
+      "title": null,
+      "posted_date": null,
+      "latitude": null,
+      "longitude": null,
+      "detail_fetched": null
+    },
+    {
+      "id": "125748159",
+      "type": "Attico - Mansarda",
+      "price": 295000,
+      "size_m2": 104.0,
+      "eur_per_m2": 2837,
+      "url": "https://www.immobiliare.it/annunci/125748159/",
+      "first_seen": "2026-03-20",
+      "rooms": "3",
+      "bathrooms": "2",
+      "condition": "Buono / Abitabile",
+      "energy_class": "C",
+      "floor": "seminterrato, 3",
+      "title": "Trilocale via Veneto 13, San Bovio San Felice, Peschiera Borromeo",
+      "posted_date": "2025-12-16",
+      "latitude": 45.4585,
+      "longitude": 9.3171,
+      "detail_fetched": "2026-03-20"
+    },
+    {
+      "id": "123643709",
+      "type": "Appartamento",
+      "price": 470000,
+      "size_m2": 161.0,
+      "eur_per_m2": 2919,
+      "url": "https://www.immobiliare.it/annunci/123643709/",
+      "first_seen": "2026-03-20",
+      "rooms": "5",
+      "bathrooms": "2",
+      "condition": "Buono / Abitabile",
+      "energy_class": "C",
+      "floor": "piano terra",
+      "title": "Appartamento via Umbria 58, San Bovio San Felice, Peschiera Borromeo",
+      "posted_date": "2025-10-06",
+      "latitude": 45.454,
+      "longitude": 9.3206,
+      "detail_fetched": "2026-03-20"
+    },
+    {
+      "id": "124360291",
+      "type": "Appartamento",
+      "price": 289000,
+      "size_m2": null,
+      "eur_per_m2": null,
+      "url": "https://www.immobiliare.it/annunci/124360291/",
+      "first_seen": "2026-03-26",
+      "rooms": null,
+      "bathrooms": null,
+      "condition": null,
+      "energy_class": null,
+      "floor": null,
+      "title": null,
+      "posted_date": null,
+      "latitude": null,
+      "longitude": null,
+      "detail_fetched": null
+    },
+    {
+      "id": "127039593",
+      "type": "Appartamento",
+      "price": 415000,
+      "size_m2": null,
+      "eur_per_m2": null,
+      "url": "https://www.immobiliare.it/annunci/127039593/",
+      "first_seen": "2026-03-26",
+      "rooms": null,
+      "bathrooms": null,
+      "condition": null,
+      "energy_class": null,
+      "floor": null,
+      "title": null,
+      "posted_date": null,
+      "latitude": null,
+      "longitude": null,
+      "detail_fetched": null
+    },
+    {
+      "id": "123257495",
+      "type": "Appartamento",
+      "price": 332000,
+      "size_m2": 123.0,
+      "eur_per_m2": 2699,
+      "url": "https://www.immobiliare.it/annunci/123257495/",
+      "first_seen": "2026-03-20",
+      "rooms": "3",
+      "bathrooms": "2",
+      "condition": "Buono / Abitabile",
+      "energy_class": "E",
+      "floor": "1",
+      "title": "Trilocale via Caduti di Nassiriya 6, San Bovio San Felice, Peschiera Borromeo",
+      "posted_date": "2025-09-19",
+      "latitude": 45.4546,
+      "longitude": 9.3179,
+      "detail_fetched": "2026-03-20"
+    },
+    {
+      "id": "126491517",
+      "type": "Villa",
+      "price": 475000,
+      "size_m2": null,
+      "eur_per_m2": null,
+      "url": "https://www.immobiliare.it/annunci/126491517/",
+      "first_seen": "2026-03-26",
+      "rooms": null,
+      "bathrooms": null,
+      "condition": null,
+      "energy_class": null,
+      "floor": null,
+      "title": null,
+      "posted_date": null,
+      "latitude": null,
+      "longitude": null,
+      "detail_fetched": null
+    },
+    {
+      "id": "126392493",
+      "type": "Appartamento",
+      "price": 390000,
+      "size_m2": 130.0,
+      "eur_per_m2": 3000,
+      "url": "https://www.immobiliare.it/annunci/126392493/",
+      "first_seen": "2026-03-20",
+      "rooms": "4",
+      "bathrooms": "2",
+      "condition": "Ottimo / Ristrutturato",
+      "energy_class": "C",
+      "floor": "seminterrato, 2",
+      "title": "Quadrilocale via Umbria 58, San Bovio San Felice, Peschiera Borromeo",
+      "posted_date": "2026-02-02",
+      "latitude": 45.454,
+      "longitude": 9.3208,
+      "detail_fetched": "2026-03-20"
+    },
+    {
+      "id": "127253729",
+      "type": "Appartamento",
+      "price": 395000,
+      "size_m2": null,
+      "eur_per_m2": null,
+      "url": "https://www.immobiliare.it/annunci/127253729/",
+      "first_seen": "2026-03-26",
+      "rooms": null,
+      "bathrooms": null,
+      "condition": null,
+      "energy_class": null,
+      "floor": null,
+      "title": null,
+      "posted_date": null,
+      "latitude": null,
+      "longitude": null,
+      "detail_fetched": null
+    },
+    {
+      "id": "127441940",
+      "type": "Appartamento",
+      "price": 193000,
+      "size_m2": null,
+      "eur_per_m2": null,
+      "url": "https://www.immobiliare.it/annunci/127441940/",
+      "first_seen": "2026-03-26",
+      "rooms": null,
+      "bathrooms": null,
+      "condition": null,
+      "energy_class": null,
+      "floor": null,
+      "title": null,
+      "posted_date": null,
+      "latitude": null,
+      "longitude": null,
+      "detail_fetched": null
+    },
+    {
+      "id": "125734121",
+      "type": "Appartamento",
+      "price": 335000,
+      "size_m2": null,
+      "eur_per_m2": null,
+      "url": "https://www.immobiliare.it/annunci/125734121/",
+      "first_seen": "2026-03-26",
+      "rooms": null,
+      "bathrooms": null,
+      "condition": null,
+      "energy_class": null,
+      "floor": null,
+      "title": null,
+      "posted_date": null,
+      "latitude": null,
+      "longitude": null,
+      "detail_fetched": null
+    },
+    {
+      "id": "125717389",
+      "type": "Appartamento",
+      "price": 239000,
+      "size_m2": null,
+      "eur_per_m2": null,
+      "url": "https://www.immobiliare.it/annunci/125717389/",
+      "first_seen": "2026-03-26",
+      "rooms": null,
+      "bathrooms": null,
+      "condition": null,
+      "energy_class": null,
+      "floor": null,
+      "title": null,
+      "posted_date": null,
+      "latitude": null,
+      "longitude": null,
+      "detail_fetched": null
+    },
+    {
+      "id": "125084753",
+      "type": "Appartamento",
+      "price": 230000,
+      "size_m2": 77.0,
+      "eur_per_m2": 2987,
+      "url": "https://www.immobiliare.it/annunci/125084753/",
+      "first_seen": "2026-03-20",
+      "rooms": "2",
+      "bathrooms": "1",
+      "condition": "Ottimo / Ristrutturato",
+      "energy_class": "E",
+      "floor": "2 piano",
+      "title": "Bilocale via Caduti di Nassiriya 4/F, San Bovio San Felice, Peschiera Borromeo",
+      "posted_date": "2025-12-02",
+      "latitude": 45.4547,
+      "longitude": 9.31732,
+      "detail_fetched": "2026-03-20"
+    },
+    {
+      "id": "124473643",
+      "type": "Attico - Mansarda",
+      "price": 480000,
+      "size_m2": null,
+      "eur_per_m2": null,
+      "url": "https://www.immobiliare.it/annunci/124473643/",
+      "first_seen": "2026-03-26",
+      "rooms": null,
+      "bathrooms": null,
+      "condition": null,
+      "energy_class": null,
+      "floor": null,
+      "title": null,
+      "posted_date": null,
+      "latitude": null,
+      "longitude": null,
+      "detail_fetched": null
+    }
+  ],
+  "market_index": {
+    "latest_label": "2026-02-01",
+    "latest_value": 2827.0,
+    "history": [
+      [
+        "2017-11-01",
+        2182.0
+      ],
+      [
+        "2017-12-01",
+        2175.0
+      ],
+      [
+        "2018-01-01",
+        2179.0
+      ],
+      [
+        "2018-02-01",
+        2169.0
+      ],
+      [
+        "2018-03-01",
+        2172.0
+      ],
+      [
+        "2018-04-01",
+        2167.0
+      ],
+      [
+        "2018-05-01",
+        2165.0
+      ],
+      [
+        "2018-06-01",
+        2175.0
+      ],
+      [
+        "2018-07-01",
+        2174.0
+      ],
+      [
+        "2018-08-01",
+        2169.0
+      ],
+      [
+        "2018-09-01",
+        2174.0
+      ],
+      [
+        "2018-10-01",
+        2174.0
+      ],
+      [
+        "2018-11-01",
+        2183.0
+      ],
+      [
+        "2018-12-01",
+        2187.0
+      ],
+      [
+        "2019-01-01",
+        2183.0
+      ],
+      [
+        "2019-02-01",
+        2185.0
+      ],
+      [
+        "2019-03-01",
+        2186.0
+      ],
+      [
+        "2019-04-01",
+        2178.0
+      ],
+      [
+        "2019-05-01",
+        2189.0
+      ],
+      [
+        "2019-06-01",
+        2195.0
+      ],
+      [
+        "2019-07-01",
+        2190.0
+      ],
+      [
+        "2019-08-01",
+        2204.0
+      ],
+      [
+        "2019-09-01",
+        2197.0
+      ],
+      [
+        "2019-10-01",
+        2195.0
+      ],
+      [
+        "2019-11-01",
+        2191.0
+      ],
+      [
+        "2019-12-01",
+        2161.0
+      ],
+      [
+        "2020-01-01",
+        2155.0
+      ],
+      [
+        "2020-02-01",
+        2147.0
+      ],
+      [
+        "2020-03-01",
+        2175.0
+      ],
+      [
+        "2020-04-01",
+        2178.0
+      ],
+      [
+        "2020-05-01",
+        2184.0
+      ],
+      [
+        "2020-06-01",
+        2190.0
+      ],
+      [
+        "2020-07-01",
+        2184.0
+      ],
+      [
+        "2020-08-01",
+        2180.0
+      ],
+      [
+        "2020-09-01",
+        2160.0
+      ],
+      [
+        "2020-10-01",
+        2154.0
+      ],
+      [
+        "2020-11-01",
+        2156.0
+      ],
+      [
+        "2020-12-01",
+        2160.0
+      ],
+      [
+        "2021-01-01",
+        2164.0
+      ],
+      [
+        "2021-02-01",
+        2171.0
+      ],
+      [
+        "2021-03-01",
+        2176.0
+      ],
+      [
+        "2021-04-01",
+        2187.0
+      ],
+      [
+        "2021-05-01",
+        2203.0
+      ],
+      [
+        "2021-06-01",
+        2197.0
+      ],
+      [
+        "2021-07-01",
+        2204.0
+      ],
+      [
+        "2021-08-01",
+        2217.0
+      ],
+      [
+        "2021-09-01",
+        2237.0
+      ],
+      [
+        "2021-10-01",
+        2252.0
+      ],
+      [
+        "2021-11-01",
+        2269.0
+      ],
+      [
+        "2021-12-01",
+        2285.0
+      ],
+      [
+        "2022-01-01",
+        2302.0
+      ],
+      [
+        "2022-02-01",
+        2307.0
+      ],
+      [
+        "2022-03-01",
+        2299.0
+      ],
+      [
+        "2022-04-01",
+        2304.0
+      ],
+      [
+        "2022-05-01",
+        2312.0
+      ],
+      [
+        "2022-06-01",
+        2311.0
+      ],
+      [
+        "2022-07-01",
+        2301.0
+      ],
+      [
+        "2022-08-01",
+        2314.0
+      ],
+      [
+        "2022-09-01",
+        2302.0
+      ],
+      [
+        "2022-10-01",
+        2306.0
+      ],
+      [
+        "2022-11-01",
+        2316.0
+      ],
+      [
+        "2022-12-01",
+        2315.0
+      ],
+      [
+        "2023-01-01",
+        2309.0
+      ],
+      [
+        "2023-02-01",
+        2334.0
+      ],
+      [
+        "2023-03-01",
+        2368.0
+      ],
+      [
+        "2023-04-01",
+        2375.0
+      ],
+      [
+        "2023-05-01",
+        2385.0
+      ],
+      [
+        "2023-06-01",
+        2396.0
+      ],
+      [
+        "2023-07-01",
+        2412.0
+      ],
+      [
+        "2023-08-01",
+        2405.0
+      ],
+      [
+        "2023-09-01",
+        2418.0
+      ],
+      [
+        "2023-10-01",
+        2404.0
+      ],
+      [
+        "2023-11-01",
+        2412.0
+      ],
+      [
+        "2023-12-01",
+        2412.0
+      ],
+      [
+        "2024-01-01",
+        2391.0
+      ],
+      [
+        "2024-02-01",
+        2408.0
+      ],
+      [
+        "2024-03-01",
+        2450.0
+      ],
+      [
+        "2024-04-01",
+        2439.0
+      ],
+      [
+        "2024-05-01",
+        2444.0
+      ],
+      [
+        "2024-06-01",
+        2475.0
+      ],
+      [
+        "2024-07-01",
+        2480.0
+      ],
+      [
+        "2024-08-01",
+        2511.0
+      ],
+      [
+        "2024-09-01",
+        2520.0
+      ],
+      [
+        "2024-10-01",
+        2511.0
+      ],
+      [
+        "2024-11-01",
+        2519.0
+      ],
+      [
+        "2024-12-01",
+        2525.0
+      ],
+      [
+        "2025-01-01",
+        2530.0
+      ],
+      [
+        "2025-02-01",
+        2575.0
+      ],
+      [
+        "2025-03-01",
+        2582.0
+      ],
+      [
+        "2025-04-01",
+        2619.0
+      ],
+      [
+        "2025-05-01",
+        2653.0
+      ],
+      [
+        "2025-06-01",
+        2684.0
+      ],
+      [
+        "2025-07-01",
+        2709.0
+      ],
+      [
+        "2025-08-01",
+        2706.0
+      ],
+      [
+        "2025-09-01",
+        2745.0
+      ],
+      [
+        "2025-10-01",
+        2751.0
+      ],
+      [
+        "2025-11-01",
+        2780.0
+      ],
+      [
+        "2025-12-01",
+        2796.0
+      ],
+      [
+        "2026-01-01",
+        2808.0
+      ],
+      [
+        "2026-02-01",
+        2827.0
+      ]
+    ]
+  },
+  "markers_count": null
+}
